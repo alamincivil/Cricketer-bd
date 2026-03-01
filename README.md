@@ -41,10 +41,11 @@ The ultimate biography portal for Bangladesh cricketers. Explore career stats, s
    npm run dev
    ```
 
-## Screenshots
-- **Home Page**: Hero section with stats highlights.
-- **Players Directory**: Search and filter interface.
-- **Player Detail**: In-depth biography and career statistics.
+## 🐯 Screenshots
+
+| Home Page | Players List | Player Details |
+| :---: | :---: | :---: |
+| ![Home](https://picsum.photos/seed/cricket-home/800/600) | ![Players](https://picsum.photos/seed/cricket-list/800/600) | ![Detail](https://picsum.photos/seed/cricket-detail/800/600) |
 
 ## License
 MIT License. 🇧🇩
