@@ -1,45 +1,50 @@
-# 🇧🇩 Cricketer.bd
+# Cricketer.bd 🇧🇩
 
-A comprehensive biography portal for Bangladesh cricketers. Built with React, Vite, and Tailwind CSS.
+The ultimate biography portal for Bangladesh cricketers. Explore career stats, stories, and historic moments of our Tigers.
 
-## 🌟 Features
+**LIVE:** [https://cricketer.bd](https://cricketer.bd)
 
-- **Player Directory**: Browse profiles of Bangladesh's finest cricketers.
-- **Detailed Biographies**: In-depth career stories and personal details.
-- **Career Statistics**: Comprehensive stats across all formats (Test, ODI, T20).
-- **Responsive Design**: Optimized for both desktop and mobile fans.
-- **Bangladesh Flag Theme**: Proudly styled with national colors.
+## Features
+- **50 Legendary Players**: Comprehensive documentation of Bangladesh's finest cricketers across three decades.
+- **Advanced Search**: Fuzzy search powered by `Fuse.js` to find players by name, role, or birthplace.
+- **Smart Filters**: Filter by Format (Test, ODI, T20I), Role, and Era (1990s–2020s).
+- **Mobile-First Design**: Fully responsive with a floating filter toggle for mobile users.
+- **SEO Optimized**: Dynamic meta tags, sitemaps, and robots.txt for maximum visibility.
+- **Social Sharing**: Share player profiles directly to Twitter, Facebook, and WhatsApp.
+- **Fast Performance**: Route-based lazy loading and skeleton screens for a smooth experience.
 
-## 🎨 Design System
+## Tech Stack
+- **Frontend**: React 18, Vite, Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Search**: Fuse.js
+- **SEO**: React Helmet Async
+- **Deployment**: Vercel
 
-- **Primary Green**: `#006A4E` (Bangladesh Flag Green)
-- **Accent Red**: `#F42A41` (Bangladesh Flag Red)
-- **Award Gold**: `#F59E0B`
-- **Typography**: Inter (Modern Sans-Serif)
+## Getting Started
 
-## 🚀 Getting Started
+### Prerequisites
+- Node.js 18+
+- npm
 
-1. **Install Dependencies**:
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/alamincivil/Cricketer-bd.git
+   ```
+2. Install dependencies:
    ```bash
    npm install
    ```
-
-2. **Run Development Server**:
+3. Start the development server:
    ```bash
    npm run dev
    ```
 
-3. **Build for Production**:
-   ```bash
-   npm run build
-   ```
+## Screenshots
+- **Home Page**: Hero section with stats highlights.
+- **Players Directory**: Search and filter interface.
+- **Player Detail**: In-depth biography and career statistics.
 
-## 📂 Project Structure
-
-- `src/components/`: Reusable UI components (Header, Footer, Layout).
-- `src/pages/`: Main page views.
-- `src/index.css`: Tailwind configuration and global styles.
-- `src/App.tsx`: Routing and main application structure.
-
----
-Made with ❤️ for Bangladesh Cricket.🇧🇩
+## License
+MIT License. 🇧🇩

@@ -1,8 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Trophy, Users, Star, ArrowRight } from 'lucide-react';
+import { getAllPlayers } from '../services/players';
+import PlayerCard from '../components/PlayerCard';
+import StatsHighlight from '../components/StatsHighlight';
 
 export default function HomePage() {
+  const featuredPlayers = getAllPlayers().slice(0, 6);
+
   return (
     <div className="space-y-16 pb-16">
       {/* Hero Section */}
@@ -44,25 +49,11 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[
-            { icon: Users, label: 'Legendary Players', value: '100+', color: 'text-blue-500' },
-            { icon: Trophy, label: 'Major Trophies', value: '15', color: 'text-flag-gold-400' },
-            { icon: Star, label: 'Iconic Moments', value: '500+', color: 'text-flag-red-500' },
-          ].map((stat, i) => (
-            <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center group hover:shadow-md transition-shadow">
-              <div className={`p-4 rounded-full bg-gray-50 mb-4 group-hover:scale-110 transition-transform`}>
-                <stat.icon className={`w-8 h-8 ${stat.color}`} />
-              </div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-1">{stat.value}</h3>
-              <p className="text-gray-500 font-medium">{stat.label}</p>
-            </div>
-          ))}
-        </div>
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-24 relative z-20">
+        <StatsHighlight />
       </section>
 
-      {/* Featured Players Placeholder */}
+      {/* Featured Players */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-end mb-8">
           <div>
@@ -74,31 +65,9 @@ export default function HomePage() {
           </Link>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[1, 2, 3, 4].map((id) => (
-            <div key={id} className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group hover:shadow-lg transition-all">
-              <div className="aspect-[3/4] bg-gray-200 relative overflow-hidden">
-                <img
-                  src={`https://picsum.photos/seed/cricket${id}/600/800`}
-                  alt="Player"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute top-4 right-4 bg-flag-red-500 text-white text-xs font-bold px-2 py-1 rounded">
-                  # {id}
-                </div>
-              </div>
-              <div className="p-4">
-                <h3 className="font-bold text-lg text-gray-900 group-hover:text-flag-500 transition-colors">Player Name {id}</h3>
-                <p className="text-sm text-gray-500 mb-4">All-rounder</p>
-                <Link
-                  to={`/players/${id}`}
-                  className="block text-center py-2 px-4 rounded-lg bg-gray-50 text-gray-700 font-medium hover:bg-flag-500 hover:text-white transition-colors"
-                >
-                  View Profile
-                </Link>
-              </div>
-            </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {featuredPlayers.map((player) => (
+            <PlayerCard key={player.id} player={player} />
           ))}
         </div>
       </section>

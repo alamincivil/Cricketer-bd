@@ -1,0 +1,886 @@
+[
+  {
+    "id": "shakib-al-hasan",
+    "fullName": "Shakib Al Hasan",
+    "knownAs": "Shakib",
+    "dob": "1987-03-24",
+    "birthPlace": "Magura, Khulna Division, Bangladesh",
+    "role": "All-rounder",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2000s", "2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 70, "runs": 4505, "wickets": 246 },
+      "odi": { "matches": 247, "runs": 7570, "wickets": 317 },
+      "t20i": { "matches": 129, "runs": 2551, "wickets": 149 }
+    },
+    "bioEn": "Shakib Al Hasan is widely regarded as the greatest cricketer Bangladesh has ever produced and one of the finest all-rounders in the history of the game. Born in Magura, Shakib's journey began at the BKSP, the national sports institute. He made his international debut in 2006 and quickly established himself as a vital cog in the team. Shakib's unique ability to contribute equally with both bat and ball allowed Bangladesh to find balance in their XI. He has consistently ranked as the world's number one all-rounder in all three formats for extended periods. His career highlights include leading Bangladesh to historic victories and being the first player to score 600 runs and take 10 wickets in a single World Cup (2019). Despite controversies, his impact on Bangladesh cricket remains unparalleled, serving as the backbone of the national side for over a decade and a half.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/shakib-al-hasan-56143"],
+    "imageUrl": "https://picsum.photos/seed/shakib/600/800"
+  },
+  {
+    "id": "tamim-iqbal",
+    "fullName": "Tamim Iqbal Khan",
+    "knownAs": "Tamim",
+    "dob": "1989-03-20",
+    "birthPlace": "Chittagong, Bangladesh",
+    "role": "Opening Batsman",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2000s", "2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 70, "runs": 5134, "wickets": 0 },
+      "odi": { "matches": 243, "runs": 8357, "wickets": 0 },
+      "t20i": { "matches": 78, "runs": 1758, "wickets": 0 }
+    },
+    "bioEn": "Tamim Iqbal is Bangladesh's most prolific opening batsman across all formats. Hailing from a famous sporting family in Chittagong, Tamim burst onto the scene as a fearless teenager during the 2007 World Cup, where his aggressive fifty helped Bangladesh defeat India. Over the years, he evolved from a flamboyant stroke-maker to a more calculated anchor, becoming the first Bangladeshi to reach 10,000 international runs. His century at Lord's in 2010 and his heroic batting with a broken hand in the 2018 Asia Cup are legendary moments in Bangladesh cricket. Tamim has served as the captain of the ODI side, leading them to several series wins. His consistency at the top of the order has been the foundation of many Bangladesh victories, making him a true icon of the game in his country.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/tamim-iqbal-56194"],
+    "imageUrl": "https://picsum.photos/seed/tamim/600/800"
+  },
+  {
+    "id": "mushfiqur-rahim",
+    "fullName": "Mushfiqur Rahim",
+    "knownAs": "Mushfiq",
+    "dob": "1987-05-09",
+    "birthPlace": "Bogura, Bangladesh",
+    "role": "Wicketkeeper Batsman",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2000s", "2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 90, "runs": 5676, "wickets": 0 },
+      "odi": { "matches": 271, "runs": 7792, "wickets": 0 },
+      "t20i": { "matches": 102, "runs": 1500, "wickets": 0 }
+    },
+    "bioEn": "Mushfiqur Rahim is often referred to as the 'Mr. Dependable' of Bangladesh cricket. Making his Test debut at Lord's at the age of 16, he has grown into one of the most technically sound batsmen in the country. Mushfiqur was the first Bangladeshi to score a double century in Test cricket, a feat he achieved against Sri Lanka in 2013. Known for his immense work ethic and passion for the game, he has been a constant presence behind the stumps and in the middle order. His ability to play spin and his sweep shots are among the best in the world. Mushfiqur has captained Bangladesh in all formats and has been involved in almost every major victory the team has achieved in the last two decades. His longevity and commitment make him a role model for aspiring cricketers.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/mushfiqur-rahim-56029"],
+    "imageUrl": "https://picsum.photos/seed/mushfiq/600/800"
+  },
+  {
+    "id": "mashrafe-mortaza",
+    "fullName": "Mashrafe Bin Mortaza",
+    "knownAs": "Mashrafe",
+    "dob": "1983-10-05",
+    "birthPlace": "Narail, Bangladesh",
+    "role": "Bowler",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2000s", "2010s"],
+    "statsSummary": {
+      "test": { "matches": 36, "runs": 797, "wickets": 78 },
+      "odi": { "matches": 220, "runs": 1787, "wickets": 270 },
+      "t20i": { "matches": 54, "runs": 377, "wickets": 42 }
+    },
+    "bioEn": "Mashrafe Mortaza is arguably the most beloved figure in Bangladesh cricket history. Known as the 'Narail Express', he was the first genuine fast bowler the country produced. Despite undergoing seven major knee surgeries, Mashrafe's resilience saw him return to the field time and again. His greatest contribution, however, was his leadership. As captain, he transformed a talented but inconsistent side into a formidable force, particularly in ODI cricket, leading them to the quarter-finals of the 2015 World Cup and the semi-finals of the 2017 Champions Trophy. His ability to inspire his teammates and his selfless dedication to the team's cause earned him the respect of fans and peers alike. Mashrafe's legacy is defined by his indomitable spirit and his role as the architect of Bangladesh's rise in world cricket.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/mashrafe-mortaza-56007"],
+    "imageUrl": "https://picsum.photos/seed/mashrafe/600/800"
+  },
+  {
+    "id": "mahmudullah-riyad",
+    "fullName": "Mahmudullah Riyad",
+    "knownAs": "Mahmudullah",
+    "dob": "1986-02-04",
+    "birthPlace": "Mymensingh, Bangladesh",
+    "role": "All-rounder",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2000s", "2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 50, "runs": 2914, "wickets": 43 },
+      "odi": { "matches": 232, "runs": 5386, "wickets": 82 },
+      "t20i": { "matches": 139, "runs": 2395, "wickets": 40 }
+    },
+    "bioEn": "Mahmudullah Riyad is known as the 'Silent Killer' for his ability to perform under pressure without much fanfare. He etched his name in history by becoming the first Bangladeshi to score a century in a World Cup, achieving the feat against England in 2015, and followed it up with another ton against New Zealand in the same tournament. A versatile all-rounder, Mahmudullah has been a reliable finisher in the limited-overs formats and a steady presence in the Test middle order. His calm demeanor and tactical awareness made him a successful captain in T20Is. Whether it's a crucial partnership or a breakthrough with his off-spin, Mahmudullah has often been the man for the big occasion. His contribution to Bangladesh's middle-order stability over the years has been immense.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/mahmudullah-56025"],
+    "imageUrl": "https://picsum.photos/seed/mahmudullah/600/800"
+  },
+  {
+    "id": "litton-das",
+    "fullName": "Litton Kumer Das",
+    "knownAs": "Litton",
+    "dob": "1994-10-13",
+    "birthPlace": "Dinajpur, Bangladesh",
+    "role": "Wicketkeeper Batsman",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 43, "runs": 2600, "wickets": 0 },
+      "odi": { "matches": 91, "runs": 2500, "wickets": 0 },
+      "t20i": { "matches": 80, "runs": 1800, "wickets": 0 }
+    },
+    "bioEn": "Litton Das is widely considered the most elegant batsman in the current Bangladesh setup. With a wide array of strokes and a penchant for timing the ball perfectly, Litton has become a mainstay at the top of the order. His breakthrough year came in 2022, where he was among the top run-getters globally across all formats. Litton's century in the 2018 Asia Cup final and his aggressive fifty against India in the 2022 T20 World Cup showcased his ability to dominate world-class attacks. As a wicketkeeper, he is agile and reliable. Litton's evolution into a consistent performer has been crucial for Bangladesh's transition into a more aggressive batting unit. He is seen as a future leader and the torchbearer of the team's batting department.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/litton-das-536936"],
+    "imageUrl": "https://picsum.photos/seed/litton/600/800"
+  },
+  {
+    "id": "mustafizur-rahman",
+    "fullName": "Mustafizur Rahman",
+    "knownAs": "Mustafiz",
+    "dob": "1995-09-06",
+    "birthPlace": "Satkhira, Bangladesh",
+    "role": "Bowler",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 15, "runs": 66, "wickets": 31 },
+      "odi": { "matches": 103, "runs": 7, "wickets": 163 },
+      "t20i": { "matches": 103, "runs": 10, "wickets": 128 }
+    },
+    "bioEn": "Mustafizur Rahman, famously known as 'The Fizz', took the cricketing world by storm with his unique left-arm cutters. Making his debut against India in 2015, he became the first player to win the 'Player of the Match' award in both his Test and ODI debuts. His ability to deceive batsmen with his variations made him an instant sensation and a sought-after player in T20 leagues worldwide, including the IPL. While injuries have occasionally hampered his pace, Mustafizur remains a master of death bowling and a vital asset for Bangladesh in white-ball cricket. His rise from a small village in Satkhira to international stardom is one of the most inspiring stories in Bangladesh sports, highlighting the country's ability to produce world-class bowling talent.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/mustafizur-rahman-330902"],
+    "imageUrl": "https://picsum.photos/seed/mustafiz/600/800"
+  },
+  {
+    "id": "mohammad-ashraful",
+    "fullName": "Mohammad Ashraful",
+    "knownAs": "Ashraful",
+    "dob": "1984-07-07",
+    "birthPlace": "Dhaka, Bangladesh",
+    "role": "Batsman",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2000s", "2010s"],
+    "statsSummary": {
+      "test": { "matches": 61, "runs": 2737, "wickets": 21 },
+      "odi": { "matches": 177, "runs": 3468, "wickets": 18 },
+      "t20i": { "matches": 23, "runs": 450, "wickets": 8 }
+    },
+    "bioEn": "Mohammad Ashraful was the first true superstar of Bangladesh cricket. He made history by becoming the youngest player to score a Test century, achieving the feat on his debut against Sri Lanka just after his 17th birthday. Ashraful was known for his audacious stroke-play and his ability to win matches single-handedly, most notably his century in Bangladesh's historic win over Australia in Cardiff in 2005. He captained the national side at a young age and was the face of the team during its formative years in international cricket. Although his career was marred by inconsistency and a ban for match-fixing, his impact on the psyche of Bangladesh cricket was profound, proving that a Bangladeshi batsman could compete with the best in the world.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/mohammad-ashraful-55988"],
+    "imageUrl": "https://picsum.photos/seed/ashraful/600/800"
+  },
+  {
+    "id": "habibul-bashar",
+    "fullName": "Habibul Bashar",
+    "knownAs": "Bashar",
+    "dob": "1972-08-17",
+    "birthPlace": "Kushtia, Bangladesh",
+    "role": "Batsman",
+    "formats": ["Test", "ODI"],
+    "eraTags": ["1990s", "2000s"],
+    "statsSummary": {
+      "test": { "matches": 50, "runs": 3026, "wickets": 0 },
+      "odi": { "matches": 111, "runs": 2168, "wickets": 1 }
+    },
+    "bioEn": "Habibul Bashar, often called 'Mr. Fifty', was the pillar of Bangladesh's batting during their early years as a Test-playing nation. A stylish right-handed batsman, Bashar was the first Bangladeshi to score 3,000 Test runs. As captain, he led Bangladesh to their first-ever Test victory against Zimbabwe in 2005 and oversaw the team's historic run in the 2007 World Cup, where they defeated India and South Africa. Bashar's leadership was characterized by his calm approach and his ability to lead from the front with the bat. He was the bridge between the amateur era and the professional era of Bangladesh cricket. After retirement, he has continued to serve the game as a national selector, playing a key role in the development of the next generation of cricketers.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/habibul-bashar-55989"],
+    "imageUrl": "https://picsum.photos/seed/bashar/600/800"
+  },
+  {
+    "id": "khaled-mahmud",
+    "fullName": "Khaled Mahmud Sujon",
+    "knownAs": "Sujon",
+    "dob": "1971-07-26",
+    "birthPlace": "Dhaka, Bangladesh",
+    "role": "All-rounder",
+    "formats": ["Test", "ODI"],
+    "eraTags": ["1990s", "2000s"],
+    "statsSummary": {
+      "test": { "matches": 12, "runs": 266, "wickets": 13 },
+      "odi": { "matches": 77, "runs": 991, "wickets": 67 }
+    },
+    "bioEn": "Khaled Mahmud Sujon is remembered as one of the most hardworking and committed cricketers to have played for Bangladesh. An all-rounder who bowled medium pace and batted in the middle order, Mahmud's finest hour came in the 1999 World Cup, where his three wickets helped Bangladesh secure a historic upset victory over Pakistan. He captained the national side during a challenging period and was known for his tactical acumen and fighting spirit. Despite limited natural talent compared to some of his peers, his grit and determination made him a valuable asset. Since retiring, Mahmud has been a prominent figure in Bangladesh cricket administration and coaching, serving as the team director and a member of the BCB board, continuing to influence the game's growth in the country.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/khaled-mahmud-56003"],
+    "imageUrl": "https://picsum.photos/seed/sujon/600/800"
+  },
+  {
+    "id": "najmul-hossain-shanto",
+    "fullName": "Najmul Hossain Shanto",
+    "knownAs": "Shanto",
+    "dob": "1998-08-25",
+    "birthPlace": "Rajshahi, Bangladesh",
+    "role": "Batsman",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 27, "runs": 1449, "wickets": 0 },
+      "odi": { "matches": 42, "runs": 1202, "wickets": 1 },
+      "t20i": { "matches": 39, "runs": 938, "wickets": 0 }
+    },
+    "bioEn": "Najmul Hossain Shanto is a technically gifted left-handed batsman who has risen through the ranks to become a vital part of the Bangladesh top order. Known for his composure and ability to play long innings, Shanto showed his potential early in his career at the Under-19 level. Despite a slow start to his international career, he persevered and eventually found his rhythm, scoring crucial centuries in Test and ODI cricket. His leadership qualities were recognized when he was appointed captain across all formats. Shanto's ability to anchor the innings and his improved strike rate in white-ball cricket have made him a reliable asset. He is seen as one of the pillars of the new generation of Bangladesh cricketers, carrying the responsibility of leading the batting unit into a new era.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/najmul-hossain-shanto-795843"],
+    "imageUrl": "https://picsum.photos/seed/shanto/600/800"
+  },
+  {
+    "id": "taskin-ahmed",
+    "fullName": "Taskin Ahmed",
+    "knownAs": "Taskin",
+    "dob": "1995-04-03",
+    "birthPlace": "Dhaka, Bangladesh",
+    "role": "Bowler",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 13, "runs": 204, "wickets": 30 },
+      "odi": { "matches": 70, "runs": 150, "wickets": 95 },
+      "t20i": { "matches": 54, "runs": 80, "wickets": 52 }
+    },
+    "bioEn": "Taskin Ahmed is one of the fastest and most exciting bowlers Bangladesh has ever produced. Bursting onto the scene in 2014, his raw pace and infectious energy immediately caught the attention of the cricketing world. Taskin's career has been a story of resilience, as he battled through numerous injuries and a suspension for a suspect bowling action to return stronger each time. His transformation into a more disciplined and lethal fast bowler in recent years has been remarkable. He played a key role in Bangladesh's historic series win in South Africa and has become the leader of the pace attack. Taskin's ability to generate bounce and swing at high speeds makes him a threat in all conditions. He remains a fan favorite for his passion and his trademark celebrations.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/taskin-ahmed-560231"],
+    "imageUrl": "https://picsum.photos/seed/taskin/600/800"
+  },
+  {
+    "id": "mehidy-hasan-miraz",
+    "fullName": "Mehidy Hasan Miraz",
+    "knownAs": "Miraz",
+    "dob": "1997-10-25",
+    "birthPlace": "Khulna, Bangladesh",
+    "role": "All-rounder",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 43, "runs": 1400, "wickets": 164 },
+      "odi": { "matches": 94, "runs": 1200, "wickets": 102 },
+      "t20i": { "matches": 25, "runs": 250, "wickets": 13 }
+    },
+    "bioEn": "Mehidy Hasan Miraz is a dynamic all-rounder who first made headlines as the captain of the Bangladesh Under-19 team. He had a sensational start to his Test career, taking 19 wickets in his debut series against England in 2016, leading Bangladesh to a historic victory. Since then, Miraz has evolved from a specialist off-spinner into a genuine all-rounder, contributing significantly with the bat in the lower-middle order. His fighting spirit and ability to perform in pressure situations have earned him the reputation of a match-winner. Miraz's maiden ODI century against India in 2022 is a testament to his batting prowess. He is a vital cog in the Bangladesh machine, providing balance with his accurate bowling and gritty batting. His energy on the field and tactical intelligence make him a future leadership candidate.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/mehidy-hasan-miraz-629070"],
+    "imageUrl": "https://picsum.photos/seed/miraz/600/800"
+  },
+  {
+    "id": "towhid-hridoy",
+    "fullName": "Towhid Hridoy",
+    "knownAs": "Hridoy",
+    "dob": "2000-12-04",
+    "birthPlace": "Bogura, Bangladesh",
+    "role": "Batsman",
+    "formats": ["ODI", "T20I"],
+    "eraTags": ["2020s"],
+    "statsSummary": {
+      "odi": { "matches": 27, "runs": 850, "wickets": 0 },
+      "t20i": { "matches": 14, "runs": 350, "wickets": 0 }
+    },
+    "bioEn": "Towhid Hridoy is one of the most promising young batsmen in Bangladesh cricket. A key member of the 2020 Under-19 World Cup-winning squad, Hridoy made a seamless transition to international cricket. Known for his aggressive yet calculated approach, he has quickly established himself as a reliable middle-order batsman in limited-overs formats. His ability to rotate strike and find boundaries at will has brought a fresh energy to the Bangladesh batting lineup. Hridoy's composure under pressure and his knack for playing match-winning cameos have made him an instant hit with fans and selectors alike. With a solid technique and a hunger for runs, he is widely regarded as the future of Bangladesh's batting, expected to be a mainstay for years to come.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/towhid-hridoy-921441"],
+    "imageUrl": "https://picsum.photos/seed/hridoy/600/800"
+  },
+  {
+    "id": "shoriful-islam",
+    "fullName": "Shoriful Islam",
+    "knownAs": "Shoriful",
+    "dob": "2001-06-03",
+    "birthPlace": "Panchagarh, Bangladesh",
+    "role": "Bowler",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2020s"],
+    "statsSummary": {
+      "test": { "matches": 10, "runs": 80, "wickets": 22 },
+      "odi": { "matches": 33, "runs": 30, "wickets": 51 },
+      "t20i": { "matches": 34, "runs": 20, "wickets": 43 }
+    },
+    "bioEn": "Shoriful Islam is a tall, left-arm fast bowler who was a standout performer in Bangladesh's Under-19 World Cup triumph in 2020. His ability to swing the ball both ways and his natural bounce make him a difficult customer for any batsman. Shoriful made a quick impact in international cricket, showing great maturity and skill across all formats. He is particularly effective in the powerplay and at the death, with a deceptive slower ball and a pinpoint yorker. His aggressive mindset and willingness to take on the best in the world have made him a vital part of the Bangladesh pace battery. Shoriful's rise has provided the team with a much-needed left-arm variety, and he is expected to lead the attack alongside Taskin and Mustafizur for the foreseeable future.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/shoriful-islam-1125968"],
+    "imageUrl": "https://picsum.photos/seed/shoriful/600/800"
+  },
+  {
+    "id": "ebadot-hossain",
+    "fullName": "Ebadot Hossain",
+    "knownAs": "Ebadot",
+    "dob": "1994-01-07",
+    "birthPlace": "Moulvibazar, Bangladesh",
+    "role": "Bowler",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 20, "runs": 50, "wickets": 42 },
+      "odi": { "matches": 12, "runs": 10, "wickets": 22 },
+      "t20i": { "matches": 4, "runs": 0, "wickets": 7 }
+    },
+    "bioEn": "Ebadot Hossain's journey to international cricket is one of the most unique in Bangladesh. A former volleyball player for the Bangladesh Air Force, he was discovered through a pacer hunt competition. Ebadot is known for his high-arm action, brisk pace, and his signature 'soldier salute' celebration. His career-defining moment came in early 2022 when he bowled a sensational spell to lead Bangladesh to a historic Test victory over world champions New Zealand at Mount Maunganui. That performance transformed his career and established him as a key member of the Test side. Ebadot's ability to bowl long spells with consistent pace and his improved accuracy have made him a reliable workhorse. His dedication and hard work continue to inspire many, proving that it's never too late to chase one's dreams.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/ebadot-hossain-912367"],
+    "imageUrl": "https://picsum.photos/seed/ebadot/600/800"
+  },
+  {
+    "id": "nasum-ahmed",
+    "fullName": "Nasum Ahmed",
+    "knownAs": "Nasum",
+    "dob": "1994-12-05",
+    "birthPlace": "Sylhet, Bangladesh",
+    "role": "Bowler",
+    "formats": ["ODI", "T20I"],
+    "eraTags": ["2020s"],
+    "statsSummary": {
+      "odi": { "matches": 15, "runs": 120, "wickets": 12 },
+      "t20i": { "matches": 32, "runs": 50, "wickets": 35 }
+    },
+    "bioEn": "Nasum Ahmed is a crafty left-arm orthodox spinner who has become a specialist in the T20 format for Bangladesh. Hailing from Sylhet, Nasum's ability to bowl accurately in the powerplay and stifle the opposition's scoring rate has made him a valuable asset. He gained international recognition with his exceptional performance against Australia and New Zealand in home series, where his variations and control were key to Bangladesh's success. Nasum's calm temperament and tactical awareness allow him to handle the pressure of bowling to some of the world's best batsmen. While primarily known for his T20 exploits, he has also shown his utility in ODI cricket. His consistent performances have made him a regular in the limited-overs squads, providing the team with a reliable spin option alongside the likes of Shakib and Miraz.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/nasum-ahmed-570043"],
+    "imageUrl": "https://picsum.photos/seed/nasum/600/800"
+  },
+  {
+    "id": "afif-hossain",
+    "fullName": "Afif Hossain",
+    "knownAs": "Afif",
+    "dob": "1999-09-23",
+    "birthPlace": "Khulna, Bangladesh",
+    "role": "All-rounder",
+    "formats": ["ODI", "T20I"],
+    "eraTags": ["2010s", "2020s"],
+    "statsSummary": {
+      "odi": { "matches": 31, "runs": 600, "wickets": 3 },
+      "t20i": { "matches": 69, "runs": 1100, "wickets": 12 }
+    },
+    "bioEn": "Afif Hossain is a talented left-handed batsman and a handy off-spinner who burst onto the scene with a record-breaking debut in the Bangladesh Premier League. Known for his fearless stroke-play and ability to clear the boundaries, Afif has become a key member of the Bangladesh middle order in white-ball cricket. His match-winning partnership with Mosaddek Hossain against Zimbabwe in 2019 remains one of his most memorable performances. Afif's versatility allows him to adapt to different situations, whether it's rebuilding an innings or providing a late flourish. His agile fielding and useful bowling make him a complete package for the T20 format. Despite his young age, Afif has shown great maturity and is seen as a long-term prospect for Bangladesh, with the potential to become one of the premier all-rounders in world cricket.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/afif-hossain-921443"],
+    "imageUrl": "https://picsum.photos/seed/afif/600/800"
+  },
+  {
+    "id": "nurul-hasan",
+    "fullName": "Nurul Hasan Sohan",
+    "knownAs": "Sohan",
+    "dob": "1993-11-21",
+    "birthPlace": "Khulna, Bangladesh",
+    "role": "Wicketkeeper Batsman",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 11, "runs": 450, "wickets": 0 },
+      "odi": { "matches": 7, "runs": 165, "wickets": 0 },
+      "t20i": { "matches": 46, "runs": 450, "wickets": 0 }
+    },
+    "bioEn": "Nurul Hasan Sohan is widely regarded as the best pure wicketkeeper in Bangladesh. Known for his lightning-fast reflexes and vocal presence behind the stumps, Sohan has been a consistent performer in domestic cricket for years. His ability to contribute with the bat in the lower order, often playing aggressive cameos, has made him a valuable asset in the T20 format. Sohan's leadership qualities were recognized when he was appointed captain of the T20I side for a brief period. His energy and tactical input are highly valued by his teammates and coaches. While he has faced stiff competition for the wicketkeeper-batsman slot, his superior glovework and improved batting have kept him in the national conversation. Sohan remains a key figure in Bangladesh's plans, especially in the shortest format of the game.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/nurul-hasan-437314"],
+    "imageUrl": "https://picsum.photos/seed/sohan/600/800"
+  },
+  {
+    "id": "soumya-sarkar",
+    "fullName": "Soumya Sarkar",
+    "knownAs": "Soumya",
+    "dob": "1993-02-25",
+    "birthPlace": "Satkhira, Bangladesh",
+    "role": "Opening Batsman",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 16, "runs": 831, "wickets": 4 },
+      "odi": { "matches": 66, "runs": 1850, "wickets": 11 },
+      "t20i": { "matches": 72, "runs": 1250, "wickets": 10 }
+    },
+    "bioEn": "Soumya Sarkar is an elegant left-handed opening batsman known for his aggressive style and ability to dominate the powerplay. He played a crucial role in Bangladesh's rise in ODI cricket between 2015 and 2017, scoring several match-winning innings against top-tier teams. Soumya's ability to play lofted shots with ease and his useful medium-pace bowling make him a versatile player. While he has struggled with consistency at times, his talent is undeniable. His century against Pakistan and his performances in the 2015 World Cup remain highlights of his career. Soumya's versatility allows him to bat anywhere in the top order, and his presence adds a dynamic edge to the Bangladesh batting lineup. He continues to be a part of the national setup, striving to regain the form that made him one of the most exciting prospects in world cricket.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/soumya-sarkar-436677"],
+    "imageUrl": "https://picsum.photos/seed/soumya/600/800"
+  },
+  {
+    "id": "abdur-razzak",
+    "fullName": "Abdur Razzak",
+    "knownAs": "Razzak",
+    "dob": "1982-06-15",
+    "birthPlace": "Khulna, Bangladesh",
+    "role": "Bowler",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2000s", "2010s"],
+    "statsSummary": {
+      "test": { "matches": 13, "runs": 248, "wickets": 28 },
+      "odi": { "matches": 153, "runs": 779, "wickets": 207 },
+      "t20i": { "matches": 34, "runs": 41, "wickets": 44 }
+    },
+    "bioEn": "Abdur Razzak was the first Bangladeshi bowler to take 200 ODI wickets, a milestone that cemented his place as one of the country's greatest spin bowlers. A left-arm orthodox spinner with a deceptive quicker delivery, Razzak was a mainstay of the Bangladesh attack for over a decade. His ability to control the run rate and take crucial wickets in the middle overs was instrumental in many of Bangladesh's early successes. Razzak's finest hour came in the 2007 World Cup, where his bowling helped Bangladesh defeat India and South Africa. Despite facing challenges with his bowling action, he returned each time with the same effectiveness. After retirement, he has continued to serve Bangladesh cricket as a national selector, sharing his vast experience with the next generation of players.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/abdur-razzak-55986"],
+    "imageUrl": "https://picsum.photos/seed/razzak/600/800"
+  },
+  {
+    "id": "naeem-islam",
+    "fullName": "Naeem Islam",
+    "knownAs": "Naeem",
+    "dob": "1986-12-31",
+    "birthPlace": "Gaibandha, Bangladesh",
+    "role": "Batsman",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2000s", "2010s"],
+    "statsSummary": {
+      "test": { "matches": 8, "runs": 416, "wickets": 1 },
+      "odi": { "matches": 59, "runs": 975, "wickets": 27 },
+      "t20i": { "matches": 10, "runs": 130, "wickets": 2 }
+    },
+    "bioEn": "Naeem Islam, nicknamed 'Chakka Naeem' for his ability to hit sixes in domestic cricket, was a reliable middle-order batsman for Bangladesh during the late 2000s and early 2010s. Known for his solid technique and calm temperament, Naeem was often the anchor in the middle order. He played several crucial innings in ODI cricket, helping Bangladesh stabilize after early collapses. His useful off-spin also provided the team with an extra bowling option. While he didn't have a long international career, his contribution during a transitional period for Bangladesh cricket was significant. Naeem remains a prolific run-getter in domestic cricket, where he continues to be one of the most respected figures, known for his consistency and dedication to the game.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/naeem-islam-227445"],
+    "imageUrl": "https://picsum.photos/seed/naeem/600/800"
+  },
+  {
+    "id": "junaid-siddique",
+    "fullName": "Junaid Siddique",
+    "knownAs": "Junaid",
+    "dob": "1987-10-30",
+    "birthPlace": "Rajshahi, Bangladesh",
+    "role": "Batsman",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2000s", "2010s"],
+    "statsSummary": {
+      "test": { "matches": 19, "runs": 969, "wickets": 0 },
+      "odi": { "matches": 54, "runs": 1196, "wickets": 1 },
+      "t20i": { "matches": 7, "runs": 159, "wickets": 0 }
+    },
+    "bioEn": "Junaid Siddique was a stylish left-handed top-order batsman who represented Bangladesh during a period of growth for the national team. Known for his elegant drives and solid defensive technique, Junaid was a regular in the Test and ODI sides for several years. His century against South Africa in 2008 and his consistent performances in the 2010 series against England were highlights of his career. Junaid was often tasked with the difficult job of facing the new ball in challenging conditions, a role he performed with great courage. While his international career was relatively short, he was a key part of the team's batting core during the 'Golden Era' of the late 2000s. He continues to be a prominent figure in domestic cricket, where his experience is highly valued.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/junaid-siddique-227444"],
+    "imageUrl": "https://picsum.photos/seed/junaid/600/800"
+  },
+  {
+    "id": "imrul-kayes",
+    "fullName": "Imrul Kayes",
+    "knownAs": "Imrul",
+    "dob": "1987-02-02",
+    "birthPlace": "Meherpur, Bangladesh",
+    "role": "Opening Batsman",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2000s", "2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 39, "runs": 1797, "wickets": 0 },
+      "odi": { "matches": 78, "runs": 2434, "wickets": 0 },
+      "t20i": { "matches": 14, "runs": 119, "wickets": 0 }
+    },
+    "bioEn": "Imrul Kayes has been a resilient and determined opening batsman for Bangladesh, often forming a successful partnership with Tamim Iqbal. Known for his gritty approach and ability to play long innings, Imrul has been a reliable performer in both Test and ODI cricket. His career-best 144 against Zimbabwe in 2018 and his consistent scoring in the 2010 series against England are among his finest achievements. Imrul has often been in and out of the side, but his ability to bounce back and perform when called upon has been a hallmark of his career. He is a respected figure in the dressing room and a successful captain in domestic cricket, leading his teams to multiple titles. Imrul's contribution to Bangladesh's opening stands over the years has been vital to the team's success.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/imrul-kayes-280734"],
+    "imageUrl": "https://picsum.photos/seed/imrul/600/800"
+  },
+  {
+    "id": "rubel-hossain",
+    "fullName": "Rubel Hossain",
+    "knownAs": "Rubel",
+    "dob": "1990-01-01",
+    "birthPlace": "Bagerhat, Bangladesh",
+    "role": "Bowler",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2000s", "2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 27, "runs": 265, "wickets": 36 },
+      "odi": { "matches": 104, "runs": 144, "wickets": 129 },
+      "t20i": { "matches": 28, "runs": 25, "wickets": 28 }
+    },
+    "bioEn": "Rubel Hossain is a fast bowler known for his slingy action and ability to generate significant pace and reverse swing. He etched his name in Bangladesh cricket folklore with his match-winning spell against England in the 2015 World Cup, which propelled Bangladesh into the quarter-finals. Rubel's ability to bowl lethal yorkers at the death has made him a valuable asset in limited-overs cricket. Throughout his career, he has been a consistent wicket-taker, often providing crucial breakthroughs when the team needed them most. Despite facing stiff competition from a new generation of fast bowlers, Rubel's experience and skill remain highly regarded. His journey from a small town in Bagerhat to becoming a World Cup hero is an inspiring story of perseverance and talent in Bangladesh sports.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/rubel-hossain-300619"],
+    "imageUrl": "https://picsum.photos/seed/rubel/600/800"
+  },
+  {
+    "id": "nasir-hossain",
+    "fullName": "Nasir Hossain",
+    "knownAs": "Nasir",
+    "dob": "1991-11-30",
+    "birthPlace": "Rangpur, Bangladesh",
+    "role": "All-rounder",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2010s"],
+    "statsSummary": {
+      "test": { "matches": 19, "runs": 1044, "wickets": 8 },
+      "odi": { "matches": 65, "runs": 1281, "wickets": 24 },
+      "t20i": { "matches": 31, "runs": 371, "wickets": 7 }
+    },
+    "bioEn": "Nasir Hossain was once considered the brightest young talent in Bangladesh cricket, known for his 'finisher' role in the middle order and his useful off-spin. Bursting onto the scene in 2011, Nasir's calm approach and ability to find boundaries in pressure situations made him an instant hit. He played several match-winning innings in ODI cricket and was a reliable presence in the Test middle order. His versatility and athletic fielding made him a complete package for the limited-overs formats. While his international career didn't reach the heights many expected due to inconsistency and off-field issues, his impact during his peak years was significant. Nasir remains a popular figure in domestic cricket and T20 leagues, where he continues to showcase his all-round skills and match-winning potential.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/nasir-hossain-300631"],
+    "imageUrl": "https://picsum.photos/seed/nasir/600/800"
+  },
+  {
+    "id": "suhrawadi-shuvo",
+    "fullName": "Suhrawadi Shuvo",
+    "knownAs": "Shuvo",
+    "dob": "1988-11-21",
+    "birthPlace": "Rajshahi, Bangladesh",
+    "role": "All-rounder",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2000s", "2010s"],
+    "statsSummary": {
+      "test": { "matches": 1, "runs": 0, "wickets": 0 },
+      "odi": { "matches": 17, "runs": 151, "wickets": 14 },
+      "t20i": { "matches": 1, "runs": 0, "wickets": 0 }
+    },
+    "bioEn": "Suhrawadi Shuvo is a left-arm orthodox spinner and a capable lower-order batsman who represented Bangladesh during the late 2000s and early 2010s. Known for his accuracy and ability to extract turn from the surface, Shuvo was a consistent performer in domestic cricket before making his international debut. His finest moment in international cricket came in 2010, when he took three wickets to help Bangladesh secure a historic ODI series win against New Zealand. While he didn't have a long international career, his contribution to that landmark series victory is well-remembered. Shuvo has remained a stalwart of the domestic circuit, where he continues to be a reliable performer for his team, known for his professional approach and his commitment to the game.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/suhrawadi-shuvo-227447"],
+    "imageUrl": "https://picsum.photos/seed/shuvo/600/800"
+  },
+  {
+    "id": "shahadat-hossain",
+    "fullName": "Shahadat Hossain",
+    "knownAs": "Shahadat",
+    "dob": "1986-08-07",
+    "birthPlace": "Narayanganj, Bangladesh",
+    "role": "Bowler",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2000s", "2010s"],
+    "statsSummary": {
+      "test": { "matches": 38, "runs": 548, "wickets": 72 },
+      "odi": { "matches": 51, "runs": 79, "wickets": 47 },
+      "t20i": { "matches": 6, "runs": 15, "wickets": 4 }
+    },
+    "bioEn": "Shahadat Hossain was a tall and aggressive fast bowler who was a key part of the Bangladesh pace attack during the mid-2000s and early 2010s. Known for his ability to generate bounce and his fiery temperament, Shahadat was the first Bangladeshi to have his name on the Lord's honors board after taking five wickets in a Test match against England in 2010. He was also the first Bangladeshi to take a hat-trick in ODI cricket, achieving the feat against Zimbabwe in 2006. While his career was occasionally hampered by inconsistency and off-field controversies, his impact as a genuine fast bowler during a crucial period for Bangladesh cricket was undeniable. Shahadat's ability to challenge the world's best batsmen with his pace and bounce made him a feared opponent on his day.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/shahadat-hossain-56054"],
+    "imageUrl": "https://picsum.photos/seed/shahadat/600/800"
+  },
+  {
+    "id": "alok-kapali",
+    "fullName": "Alok Kapali",
+    "knownAs": "Kapali",
+    "dob": "1984-01-01",
+    "birthPlace": "Sylhet, Bangladesh",
+    "role": "All-rounder",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2000s", "2010s"],
+    "statsSummary": {
+      "test": { "matches": 17, "runs": 584, "wickets": 6 },
+      "odi": { "matches": 69, "runs": 1235, "wickets": 24 },
+      "t20i": { "matches": 1, "runs": 0, "wickets": 0 }
+    },
+    "bioEn": "Alok Kapali is a talented all-rounder from Sylhet who etched his name in history by taking Bangladesh's first-ever hat-trick in Test cricket, achieving the feat against Pakistan in 2003. A stylish right-handed batsman and a useful leg-spinner, Kapali was a key member of the national side during the early 2000s. His century against India in the 2008 Asia Cup remains one of his most memorable performances. Kapali's versatility and ability to contribute in all departments made him a valuable asset, particularly in the limited-overs formats. While his international career was interrupted by his stint in the unofficial ICL, he returned to the national fold and continued to perform in domestic cricket. Kapali is highly respected for his skill and his contribution to the growth of cricket in the Sylhet region.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/alok-kapali-55993"],
+    "imageUrl": "https://picsum.photos/seed/kapali/600/800"
+  },
+  {
+    "id": "tushar-imran",
+    "fullName": "Tushar Imran",
+    "knownAs": "Tushar",
+    "dob": "1983-12-20",
+    "birthPlace": "Jessore, Bangladesh",
+    "role": "Batsman",
+    "formats": ["Test", "ODI"],
+    "eraTags": ["2000s"],
+    "statsSummary": {
+      "test": { "matches": 5, "runs": 89, "wickets": 0 },
+      "odi": { "matches": 41, "runs": 574, "wickets": 1 }
+    },
+    "bioEn": "Tushar Imran is a legendary figure in Bangladesh domestic cricket, known for being the first Bangladeshi to reach 10,000 first-class runs. A prolific right-handed batsman with a wide range of strokes, Tushar was a consistent performer on the domestic circuit for over two decades. While his international career was relatively brief and didn't fully reflect his immense talent, his impact on the domestic game was profound. He served as a bridge between generations, mentoring many young cricketers who went on to represent the national side. Tushar's longevity, dedication, and hunger for runs made him a role model for aspiring batsmen across the country. He remains one of the most respected figures in Bangladesh cricket, celebrated for his record-breaking achievements and his unwavering commitment to the sport.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/tushar-imran-56141"],
+    "imageUrl": "https://picsum.photos/seed/tushar/600/800"
+  },
+  {
+    "id": "aminul-islam",
+    "fullName": "Aminul Islam Bulbul",
+    "knownAs": "Bulbul",
+    "dob": "1968-02-02",
+    "birthPlace": "Dhaka, Bangladesh",
+    "role": "Batsman",
+    "formats": ["Test", "ODI"],
+    "eraTags": ["1990s", "2000s"],
+    "statsSummary": {
+      "test": { "matches": 13, "runs": 535, "wickets": 1 },
+      "odi": { "matches": 39, "runs": 768, "wickets": 1 }
+    },
+    "bioEn": "Aminul Islam Bulbul is a legendary figure in Bangladesh cricket, best known for scoring a century in Bangladesh's inaugural Test match against India in 2000. A technically sound right-handed batsman, Bulbul was the mainstay of the national side during its transition from Associate to Full Member status. His composure and leadership were vital during the 1990s, and he captained the team with great distinction. Bulbul's century at the Bangabandhu National Stadium remains one of the most iconic moments in the country's sporting history, proving that Bangladesh belonged at the highest level of the game. After retirement, he has continued to serve the sport as an international coach and administrator, working with the ICC to develop cricket across Asia and beyond.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/aminul-islam-55987"],
+    "imageUrl": "https://picsum.photos/seed/bulbul/600/800"
+  },
+  {
+    "id": "akram-khan",
+    "fullName": "Akram Khan",
+    "knownAs": "Akram",
+    "dob": "1968-11-01",
+    "birthPlace": "Chittagong, Bangladesh",
+    "role": "Batsman",
+    "formats": ["Test", "ODI"],
+    "eraTags": ["1990s", "2000s"],
+    "statsSummary": {
+      "test": { "matches": 8, "runs": 259, "wickets": 0 },
+      "odi": { "matches": 44, "runs": 976, "wickets": 0 }
+    },
+    "bioEn": "Akram Khan is the man who arguably changed the course of Bangladesh cricket history. As captain, he led Bangladesh to victory in the 1997 ICC Trophy, which secured the country's first-ever qualification for the Cricket World Cup. His unbeaten 68 against the Netherlands in that tournament is legendary, played under immense pressure to keep the dream alive. A powerful right-handed batsman from Chittagong, Akram was known for his strength and his ability to anchor the innings. He was a key member of the side that defeated Pakistan in the 1999 World Cup, a victory that paved the way for Bangladesh's Test status. Since retiring, he has been a prominent administrator, serving as the chief selector and a director of the Bangladesh Cricket Board, continuing his lifelong commitment to the game.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/akram-khan-56001"],
+    "imageUrl": "https://picsum.photos/seed/akram/600/800"
+  },
+  {
+    "id": "minhazul-abedin",
+    "fullName": "Minhazul Abedin Nannu",
+    "knownAs": "Nannu",
+    "dob": "1965-09-25",
+    "birthPlace": "Chittagong, Bangladesh",
+    "role": "Batsman",
+    "formats": ["Test", "ODI"],
+    "eraTags": ["1990s", "2000s"],
+    "statsSummary": {
+      "test": { "matches": 2, "runs": 28, "wickets": 0 },
+      "odi": { "matches": 27, "runs": 453, "wickets": 13 }
+    },
+    "bioEn": "Minhazul Abedin, popularly known as Nannu, was one of the most technically accomplished batsmen Bangladesh produced during the pre-Test era. A mainstay of the middle order throughout the 1990s, his finest hour came in the 1999 World Cup, where his unbeaten 68 helped Bangladesh secure a historic victory over Scotland. He was also a vital part of the team that defeated Pakistan in the same tournament. Known for his elegant stroke-play and his useful off-spin, Minhazul was a respected figure both on and off the field. After his playing days, he transitioned into a successful career as a national selector, eventually becoming the chief selector of the Bangladesh national team. His deep understanding of the game and his eye for talent have been crucial in shaping the modern era of Bangladesh cricket.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/minhazul-abedin-56002"],
+    "imageUrl": "https://picsum.photos/seed/nannu/600/800"
+  },
+  {
+    "id": "naimur-rahman",
+    "fullName": "Naimur Rahman Durjoy",
+    "knownAs": "Durjoy",
+    "dob": "1974-09-19",
+    "birthPlace": "Manikganj, Bangladesh",
+    "role": "All-rounder",
+    "formats": ["Test", "ODI"],
+    "eraTags": ["1990s", "2000s"],
+    "statsSummary": {
+      "test": { "matches": 8, "runs": 210, "wickets": 12 },
+      "odi": { "matches": 29, "runs": 488, "wickets": 10 }
+    },
+    "bioEn": "Naimur Rahman Durjoy holds a special place in history as the first-ever Test captain of Bangladesh. An all-rounder who bowled off-spin and batted in the middle order, Durjoy led the team in their inaugural Test against India in 2000, where he also took a historic six-wicket haul in the first innings. He was a key member of the 1997 ICC Trophy-winning squad and played a vital role in the 1999 World Cup. Known for his tactical mind and his ability to perform under pressure, Durjoy was a natural leader. After retiring from the game, he entered politics and became a Member of Parliament, while also serving as a director of the Bangladesh Cricket Board. His contribution to the foundation of Bangladesh's Test journey remains a cornerstone of the country's cricketing legacy.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/naimur-rahman-56004"],
+    "imageUrl": "https://picsum.photos/seed/durjoy/600/800"
+  },
+  {
+    "id": "enamul-haque-jr",
+    "fullName": "Enamul Haque Jr",
+    "knownAs": "Enamul Jr",
+    "dob": "1986-12-05",
+    "birthPlace": "Sylhet, Bangladesh",
+    "role": "Bowler",
+    "formats": ["Test", "ODI"],
+    "eraTags": ["2000s", "2010s"],
+    "statsSummary": {
+      "test": { "matches": 15, "runs": 59, "wickets": 44 },
+      "odi": { "matches": 10, "runs": 12, "wickets": 14 }
+    },
+    "bioEn": "Enamul Haque Jr is a left-arm orthodox spinner who etched his name in history during Bangladesh's first-ever Test series win against Zimbabwe in 2005. At just 18 years old, he took 12 wickets in the second Test at Chittagong, including a match-winning 7 for 95 in the second innings. That performance remains one of the greatest bowling displays by a Bangladeshi in Test cricket. Enamul was known for his flight, turn, and his ability to outsmart batsmen with his subtle variations. While he didn't have a very long international career, his impact during that historic series was profound, proving the potential of Bangladesh's spin department. He has remained a prolific wicket-taker in domestic cricket, where he continues to be one of the most successful bowlers in the history of the first-class game in Bangladesh.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/enamul-haque-jr-55994"],
+    "imageUrl": "https://picsum.photos/seed/enamuljr/600/800"
+  },
+  {
+    "id": "manjural-islam-rana",
+    "fullName": "Manjural Islam Rana",
+    "knownAs": "Rana",
+    "dob": "1984-05-04",
+    "birthPlace": "Khulna, Bangladesh",
+    "role": "All-rounder",
+    "formats": ["Test", "ODI"],
+    "eraTags": ["2000s"],
+    "statsSummary": {
+      "test": { "matches": 6, "runs": 257, "wickets": 5 },
+      "odi": { "matches": 25, "runs": 331, "wickets": 23 }
+    },
+    "bioEn": "Manjural Islam Rana was a talented left-arm spinner and a gritty lower-order batsman whose life and career were tragically cut short in a road accident in 2007. At the time of his passing, he was one of the most promising young all-rounders in the country. Rana made a significant impact in his short career, most notably during the 2004 series against Zimbabwe, where his bowling and batting were instrumental in Bangladesh's successes. He was known for his accuracy, his fighting spirit, and his infectious smile. His death on the eve of the 2007 World Cup deeply affected the Bangladesh team, who dedicated their historic victory over India to his memory. Rana remains a beloved figure in Bangladesh cricket, remembered for his immense potential and the joy he brought to the game during his brief time on the international stage.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/manjural-islam-rana-56026"],
+    "imageUrl": "https://picsum.photos/seed/rana/600/800"
+  },
+  {
+    "id": "mohammad-rafique",
+    "fullName": "Mohammad Rafique",
+    "knownAs": "Rafique",
+    "dob": "1970-09-05",
+    "birthPlace": "Dhaka, Bangladesh",
+    "role": "All-rounder",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["1990s", "2000s"],
+    "statsSummary": {
+      "test": { "matches": 33, "runs": 1059, "wickets": 100 },
+      "odi": { "matches": 125, "runs": 1191, "wickets": 125 },
+      "t20i": { "matches": 1, "runs": 13, "wickets": 0 }
+    },
+    "bioEn": "Mohammad Rafique is widely regarded as one of the greatest match-winners Bangladesh has ever produced. A legendary left-arm spinner and a dangerous lower-order batsman, Rafique was the first Bangladeshi to reach the double of 1,000 runs and 100 wickets in Test cricket. His finest hour came in the 1997 ICC Trophy final, where his aggressive batting helped Bangladesh chase down a difficult target to qualify for the World Cup. Rafique's ability to extract turn and bounce from any surface made him a constant threat, and his century against the West Indies in 2004 showcased his batting prowess. He was a key figure in almost all of Bangladesh's early international victories. Rafique's humble beginnings and his rise to international stardom made him a true hero of the masses, and his legacy as a pioneer of Bangladesh spin bowling remains unmatched.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/mohammad-rafique-56006"],
+    "imageUrl": "https://picsum.photos/seed/rafique/600/800"
+  },
+  {
+    "id": "khaled-mashud",
+    "fullName": "Khaled Mashud Pilot",
+    "knownAs": "Pilot",
+    "dob": "1976-02-08",
+    "birthPlace": "Rajshahi, Bangladesh",
+    "role": "Wicketkeeper Batsman",
+    "formats": ["Test", "ODI"],
+    "eraTags": ["1990s", "2000s"],
+    "statsSummary": {
+      "test": { "matches": 44, "runs": 1409, "wickets": 0 },
+      "odi": { "matches": 126, "runs": 1818, "wickets": 0 }
+    },
+    "bioEn": "Khaled Mashud, popularly known as Pilot, was Bangladesh's premier wicketkeeper for over a decade. Known for his safe hands and his ability to bat under pressure, Mashud was a vital part of the national side during its formative years. He was a key member of the 1997 ICC Trophy-winning squad and played in the 1999, 2003, and 2007 World Cups. His century against the West Indies in 2004 and his gritty innings in many Test matches saved Bangladesh from difficult situations. As captain, he led the team with great dignity and tactical awareness. Mashud's contribution behind the stumps was equally significant, as he mentored many young bowlers and set high standards for wicketkeeping in the country. After retirement, he has remained involved in the game through coaching and administrative roles, continuing to contribute to the development of Bangladesh cricket.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/khaled-mashud-56005"],
+    "imageUrl": "https://picsum.photos/seed/pilot/600/800"
+  },
+  {
+    "id": "javed-omar",
+    "fullName": "Javed Omar Belim",
+    "knownAs": "Javed",
+    "dob": "1976-11-25",
+    "birthPlace": "Dhaka, Bangladesh",
+    "role": "Opening Batsman",
+    "formats": ["Test", "ODI"],
+    "eraTags": ["1990s", "2000s"],
+    "statsSummary": {
+      "test": { "matches": 40, "runs": 1720, "wickets": 0 },
+      "odi": { "matches": 59, "runs": 1312, "wickets": 0 }
+    },
+    "bioEn": "Javed Omar Belim was the epitome of patience and resilience at the top of the order for Bangladesh. Known for his solid defensive technique and his ability to occupy the crease for long periods, Javed was a vital part of the Test side during its early years. He made history by becoming only the third player in Test history to carry his bat through an entire completed innings on debut, achieving the feat against Zimbabwe in 2001. His ability to blunt the new ball and protect the middle order was crucial for a developing team. Javed's nickname 'Gullu' was a household name in Bangladesh, and his dedication to the team's cause earned him the respect of fans and peers alike. After retiring, he has served as a manager and coach, sharing his vast knowledge of the game with the next generation of Bangladesh cricketers.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/javed-omar-56008"],
+    "imageUrl": "https://picsum.photos/seed/javed/600/800"
+  },
+  {
+    "id": "hannan-sarkar",
+    "fullName": "Hannan Sarkar",
+    "knownAs": "Hannan",
+    "dob": "1982-12-01",
+    "birthPlace": "Dhaka, Bangladesh",
+    "role": "Opening Batsman",
+    "formats": ["Test", "ODI"],
+    "eraTags": ["2000s"],
+    "statsSummary": {
+      "test": { "matches": 17, "runs": 662, "wickets": 0 },
+      "odi": { "matches": 30, "runs": 383, "wickets": 0 }
+    },
+    "bioEn": "Hannan Sarkar was a gritty opening batsman who represented Bangladesh during the early 2000s. He is best remembered for his unique record of being dismissed by a bowler (Chaminda Vaas) off the first ball of a match in three consecutive instances, a testament to the challenging era he played in. Despite the tough start to many of his innings, Hannan was known for his courage and his ability to play some attractive strokes once settled. He played several useful innings in Test cricket, including a couple of half-centuries against top-tier attacks. While his international career was relatively short, his contribution as an opener during a difficult period for Bangladesh was significant. After retiring from the game, he has remained involved in cricket as a coach and a selector, working at the grassroots level to identify and nurture young talent for the national team.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/hannan-sarkar-56009"],
+    "imageUrl": "https://picsum.photos/seed/hannan/600/800"
+  },
+  {
+    "id": "anamul-haque",
+    "fullName": "Anamul Haque Bijoy",
+    "knownAs": "Anamul",
+    "dob": "1992-12-16",
+    "birthPlace": "Kushtia, Bangladesh",
+    "role": "Opening Batsman",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 5, "runs": 100, "wickets": 0 },
+      "odi": { "matches": 44, "runs": 1300, "wickets": 0 },
+      "t20i": { "matches": 20, "runs": 450, "wickets": 0 }
+    },
+    "bioEn": "Anamul Haque Bijoy is an aggressive right-handed opening batsman and a reliable wicketkeeper. He first gained prominence as the highest run-getter in the 2012 Under-19 World Cup. Anamul's ability to play powerful strokes and his penchant for scoring big hundreds in domestic cricket have made him a frequent member of the national squad. His maiden ODI century against the West Indies in 2012 remains a career highlight. While he has faced periods of inconsistency and injury, his talent as a top-order batsman is well-recognized. Anamul continues to be a prolific scorer in the Dhaka Premier League and other domestic tournaments, always knocking on the doors of the national team with his consistent performances and his hunger for runs.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/anamul-haque-380354"],
+    "imageUrl": "https://picsum.photos/seed/anamul/600/800"
+  },
+  {
+    "id": "mominul-haque",
+    "fullName": "Mominul Haque",
+    "knownAs": "Mominul",
+    "dob": "1991-09-29",
+    "birthPlace": "Cox's Bazar, Bangladesh",
+    "role": "Batsman",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 61, "runs": 4000, "wickets": 10 },
+      "odi": { "matches": 28, "runs": 557, "wickets": 0 },
+      "t20i": { "matches": 6, "runs": 60, "wickets": 0 }
+    },
+    "bioEn": "Mominul Haque is often referred to as Bangladesh's Test specialist. A diminutive left-handed batsman with a solid technique and immense concentration, Mominul holds the record for the most Test centuries for Bangladesh. He had a sensational start to his Test career, maintaining an average of over 50 for a significant period. His ability to play long innings and anchor the batting unit has been crucial in many of Bangladesh's Test successes, particularly at home. Mominul also served as the Test captain, leading the team to a historic victory in New Zealand in 2022. While primarily known for his red-ball prowess, his contribution to the team's stability in the longest format has been invaluable. He remains a key figure in Bangladesh's quest for Test excellence.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/mominul-haque-374057"],
+    "imageUrl": "https://picsum.photos/seed/mominul/600/800"
+  },
+  {
+    "id": "taijul-islam",
+    "fullName": "Taijul Islam",
+    "knownAs": "Taijul",
+    "dob": "1992-02-07",
+    "birthPlace": "Natore, Bangladesh",
+    "role": "Bowler",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 46, "runs": 600, "wickets": 192 },
+      "odi": { "matches": 18, "runs": 50, "wickets": 30 },
+      "t20i": { "matches": 2, "runs": 0, "wickets": 1 }
+    },
+    "bioEn": "Taijul Islam is a crafty left-arm orthodox spinner who has become a mainstay of the Bangladesh Test attack. Known for his accuracy, subtle variations, and ability to bowl long spells, Taijul holds the record for the best bowling figures by a Bangladeshi in a Test innings (8 for 39 against Zimbabwe). He also made history by taking a hat-trick on his ODI debut, becoming the first player to do so. Taijul's ability to exploit helpful conditions and his persistence on flatter tracks have made him a reliable wicket-taker. He often plays a supporting role to Shakib Al Hasan but has frequently led the attack with great success. His consistent performances have made him one of the most successful spinners in Bangladesh's Test history.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/taijul-islam-400671"],
+    "imageUrl": "https://picsum.photos/seed/taijul/600/800"
+  },
+  {
+    "id": "shafiul-islam",
+    "fullName": "Shafiul Islam",
+    "knownAs": "Shafiul",
+    "dob": "1989-10-06",
+    "birthPlace": "Bogura, Bangladesh",
+    "role": "Bowler",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 11, "runs": 150, "wickets": 17 },
+      "odi": { "matches": 60, "runs": 130, "wickets": 70 },
+      "t20i": { "matches": 25, "runs": 40, "wickets": 31 }
+    },
+    "bioEn": "Shafiul Islam is a brisk right-arm fast-medium bowler who was a regular member of the Bangladesh side during the early 2010s. Known for his ability to swing the new ball and his useful lower-order batting, Shafiul played a key role in several memorable victories, including the 2011 World Cup win against England. His partnership with Mahmudullah in that match is etched in the fans' memories. Shafiul's career has been hampered by frequent injuries, but his ability to return and perform has shown his resilience. He has been a consistent performer in domestic cricket and T20 leagues, where his experience and skill in the death overs are highly valued. Shafiul remains a respected figure in the Bangladesh pace battery.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/shafiul-islam-390082"],
+    "imageUrl": "https://picsum.photos/seed/shafiul/600/800"
+  },
+  {
+    "id": "al-amin-hossain",
+    "fullName": "Al-Amin Hossain",
+    "knownAs": "Al-Amin",
+    "dob": "1990-01-01",
+    "birthPlace": "Jhenaidah, Bangladesh",
+    "role": "Bowler",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 7, "runs": 20, "wickets": 9 },
+      "odi": { "matches": 15, "runs": 5, "wickets": 22 },
+      "t20i": { "matches": 31, "runs": 10, "wickets": 43 }
+    },
+    "bioEn": "Al-Amin Hossain is a right-arm fast-medium bowler known for his high-arm action and ability to generate bounce and movement. He burst onto the scene with impressive performances in domestic cricket and quickly made his mark in the international arena, particularly in the T20 format. Al-Amin was a key part of the Bangladesh attack during the 2014 and 2016 T20 World Cups. His ability to take wickets with the new ball and his deceptive slower deliveries made him a difficult bowler to face. While his career has seen ups and downs due to form and technical issues, his talent as a wicket-taking bowler is undisputed. Al-Amin continues to be a prominent figure in the Bangladesh Premier League and other domestic competitions.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/al-amin-hossain-511530"],
+    "imageUrl": "https://picsum.photos/seed/alamin/600/800"
+  },
+  {
+    "id": "sabbir-rahman",
+    "fullName": "Sabbir Rahman",
+    "knownAs": "Sabbir",
+    "dob": "1991-11-22",
+    "birthPlace": "Rajshahi, Bangladesh",
+    "role": "Batsman",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 11, "runs": 481, "wickets": 0 },
+      "odi": { "matches": 66, "runs": 1333, "wickets": 3 },
+      "t20i": { "matches": 44, "runs": 946, "wickets": 4 }
+    },
+    "bioEn": "Sabbir Rahman is a hard-hitting right-handed batsman and a useful leg-spinner who was once seen as the future of Bangladesh's limited-overs batting. Known for his aggressive stroke-play and ability to clear the ropes, Sabbir played several match-winning innings, including a brilliant century against New Zealand in 2019. His athletic fielding and energy on the pitch made him a fan favorite. However, his career has been marred by inconsistency and disciplinary issues, which have seen him in and out of the national side. Despite the challenges, Sabbir's talent remains undeniable, and he continues to be a sought-after player in T20 leagues. He remains a dynamic presence on the field, always capable of turning a game with his explosive batting.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/sabbir-rahman-373538"],
+    "imageUrl": "https://picsum.photos/seed/sabbir/600/800"
+  },
+  {
+    "id": "mosaddek-hossain",
+    "fullName": "Mosaddek Hossain",
+    "knownAs": "Mosaddek",
+    "dob": "1995-12-10",
+    "birthPlace": "Mymensingh, Bangladesh",
+    "role": "All-rounder",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 4, "runs": 164, "wickets": 0 },
+      "odi": { "matches": 43, "runs": 634, "wickets": 17 },
+      "t20i": { "matches": 31, "runs": 362, "wickets": 15 }
+    },
+    "bioEn": "Mosaddek Hossain is a talented all-rounder known for his calm temperament and his ability to finish games in the middle order. He made a sensational start to his domestic career, scoring three double-centuries in a single first-class season. Mosaddek's finest international moment came in the 2019 Tri-Nation series final, where his rapid half-century led Bangladesh to their first-ever multi-team trophy win. His useful off-spin and reliable batting make him a valuable asset in the limited-overs formats. While he has faced injuries and competition for places, his tactical intelligence and all-round skills keep him in the national reckoning. Mosaddek is also a successful captain in domestic cricket, known for his leadership and his ability to perform under pressure.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/mosaddek-hossain-550133"],
+    "imageUrl": "https://picsum.photos/seed/mosaddek/600/800"
+  },
+  {
+    "id": "shuvagata-hom",
+    "fullName": "Shuvagata Hom",
+    "knownAs": "Shuvagata",
+    "dob": "1986-11-11",
+    "birthPlace": "Mymensingh, Bangladesh",
+    "role": "All-rounder",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2010s", "2020s"],
+    "statsSummary": {
+      "test": { "matches": 8, "runs": 244, "wickets": 8 },
+      "odi": { "matches": 4, "runs": 70, "wickets": 0 },
+      "t20i": { "matches": 5, "runs": 25, "wickets": 2 }
+    },
+    "bioEn": "Shuvagata Hom is a versatile all-rounder who has been a consistent performer in Bangladesh domestic cricket for many years. A solid right-handed batsman and a clever off-spinner, Shuvagata has represented the national side in all three formats. While his international appearances have been sporadic, his contribution to the domestic game is immense. He is known for his professional approach and his ability to contribute in all departments of the game. Shuvagata has been a key player for his domestic teams, often leading them to victories with his all-round performances. His experience and deep understanding of the game make him a valuable asset in any team, and he continues to be one of the most respected figures on the Bangladesh domestic circuit.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/shuvagata-hom-325946"],
+    "imageUrl": "https://picsum.photos/seed/shuvagata/600/800"
+  },
+  {
+    "id": "saqlain-sajib",
+    "fullName": "Saqlain Sajib",
+    "knownAs": "Saqlain",
+    "dob": "1988-12-01",
+    "birthPlace": "Rajshahi, Bangladesh",
+    "role": "Bowler",
+    "formats": ["ODI", "T20I"],
+    "eraTags": ["2010s"],
+    "statsSummary": {
+      "odi": { "matches": 1, "runs": 0, "wickets": 0 },
+      "t20i": { "matches": 1, "runs": 0, "wickets": 0 }
+    },
+    "bioEn": "Saqlain Sajib is a left-arm orthodox spinner who has been a prolific wicket-taker in Bangladesh domestic cricket. Known for his accuracy and his ability to bowl long, tight spells, Saqlain has been a mainstay of the Rajshahi Division and other domestic teams for over a decade. While his international opportunities were limited to a few appearances, his record in first-class and List A cricket is highly impressive. He is known for his disciplined bowling and his ability to outfox batsmen with his subtle variations in pace and flight. Saqlain remains a respected figure in the domestic circuit, where his experience and consistent performances continue to make him a valuable asset for his team.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/saqlain-sajib-227446"],
+    "imageUrl": "https://picsum.photos/seed/saqlain/600/800"
+  },
+  {
+    "id": "yasir-ali",
+    "fullName": "Yasir Ali Rabbi",
+    "knownAs": "Yasir",
+    "dob": "1996-03-06",
+    "birthPlace": "Chittagong, Bangladesh",
+    "role": "Batsman",
+    "formats": ["Test", "ODI", "T20I"],
+    "eraTags": ["2020s"],
+    "statsSummary": {
+      "test": { "matches": 6, "runs": 200, "wickets": 0 },
+      "odi": { "matches": 9, "runs": 100, "wickets": 0 },
+      "t20i": { "matches": 11, "runs": 130, "wickets": 0 }
+    },
+    "bioEn": "Yasir Ali Rabbi is a talented right-handed middle-order batsman who has been a consistent performer in domestic cricket, earning his place in the national side through sheer weight of runs. Known for his solid technique and ability to play both spin and pace with ease, Yasir is seen as a long-term prospect for the Bangladesh middle order. He made his international debut in 2021 and has shown glimpses of his potential in the limited opportunities he has had. His ability to anchor the innings and his calm temperament under pressure are highly valued. Yasir continues to work hard on his game, striving to establish himself as a regular in the national setup across all formats, and is widely regarded as one of the most promising batting talents in the country.",
+    "sourceUrls": ["https://www.espncricinfo.com/cricketers/yasir-ali-604527"],
+    "imageUrl": "https://picsum.photos/seed/yasir/600/800"
+  }
+]

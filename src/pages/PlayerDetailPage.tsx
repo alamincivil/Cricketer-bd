@@ -1,32 +1,29 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Trophy, Calendar, MapPin, Award, Star } from 'lucide-react';
+import { ArrowLeft, Trophy, Calendar, MapPin, Award, Star, ExternalLink } from 'lucide-react';
+import { getPlayerById } from '../services/players';
+import PlayerAvatar from '../components/PlayerAvatar';
+import PlayerStatsTable from '../components/PlayerStatsTable';
+import ShareButtons from '../components/ShareButtons';
+import NotFoundPage from './NotFoundPage';
+import SEOHead from '../components/SEOHead';
 
 export default function PlayerDetailPage() {
   const { id } = useParams();
+  const player = getPlayerById(id || '');
 
-  // Placeholder data
-  const player = {
-    id,
-    name: `Cricketer ${id}`,
-    fullName: `Full Name of Cricketer ${id}`,
-    role: 'All-rounder',
-    battingStyle: 'Left-hand bat',
-    bowlingStyle: 'Right-arm offbreak',
-    birthDate: 'March 24, 1987',
-    birthPlace: 'Magura, Bangladesh',
-    image: `https://picsum.photos/seed/player${id}/800/1000`,
-    bio: 'One of the greatest cricketers Bangladesh has ever produced. Known for his exceptional skills with both bat and ball, he has consistently been ranked among the top all-rounders in the world across all formats.',
-    stats: [
-      { label: 'Matches', test: '66', odi: '235', t20: '117' },
-      { label: 'Runs', test: '4454', odi: '7211', t20: '2382' },
-      { label: 'Wickets', test: '233', odi: '302', t20: '140' },
-      { label: 'Average', test: '39.07', odi: '37.55', t20: '23.12' },
-    ]
-  };
+  if (!player) {
+    return <NotFoundPage />;
+  }
 
   return (
     <div className="bg-gray-50 min-h-screen pb-20">
+      <SEOHead 
+        title={`${player.fullName}`} 
+        description={player.bioEn.slice(0, 160)} 
+        image={player.imageUrl}
+        article={true}
+      />
       {/* Header/Banner */}
       <div className="bg-flag-500 h-48 md:h-64 relative">
         <div className="max-w-7xl mx-auto px-4 h-full flex items-end">
@@ -41,42 +38,57 @@ export default function PlayerDetailPage() {
           {/* Left Column: Profile Image & Basic Info */}
           <div className="lg:col-span-1">
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
-              <div className="aspect-[3/4] bg-gray-200">
-                <img
-                  src={player.image}
-                  alt={player.name}
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <div className="p-8">
-                <h1 className="text-3xl font-bold text-gray-900 mb-2">{player.name}</h1>
+              <div className="p-8 flex flex-col items-center text-center">
+                <PlayerAvatar name={player.fullName} imageUrl={player.imageUrl} size="xl" />
+                
+                <h1 className="mt-6 text-3xl font-bold text-gray-900 mb-2">{player.knownAs}</h1>
                 <p className="text-flag-500 font-bold uppercase tracking-widest text-sm mb-6">{player.role}</p>
                 
-                <div className="space-y-4">
+                <div className="w-full space-y-4 text-left">
                   <div className="flex items-center text-gray-600">
                     <Calendar className="w-5 h-5 mr-3 text-gray-400" />
-                    <span>{player.birthDate}</span>
+                    <div className="flex flex-col">
+                      <span className="text-[10px] uppercase font-bold text-gray-400">Date of Birth</span>
+                      <span className="text-sm font-medium">{player.dob}</span>
+                    </div>
                   </div>
                   <div className="flex items-center text-gray-600">
                     <MapPin className="w-5 h-5 mr-3 text-gray-400" />
-                    <span>{player.birthPlace}</span>
+                    <div className="flex flex-col">
+                      <span className="text-[10px] uppercase font-bold text-gray-400">Birth Place</span>
+                      <span className="text-sm font-medium">{player.birthPlace}</span>
+                    </div>
                   </div>
                 </div>
 
-                <div className="mt-8 pt-8 border-t border-gray-100">
-                  <h3 className="font-bold text-gray-900 mb-4">Playing Style</h3>
-                  <div className="space-y-3">
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-500">Batting</span>
-                      <span className="font-medium text-gray-900">{player.battingStyle}</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-500">Bowling</span>
-                      <span className="font-medium text-gray-900">{player.bowlingStyle}</span>
-                    </div>
+                <div className="w-full mt-8 pt-8 border-t border-gray-100">
+                  <h3 className="font-bold text-gray-900 mb-4 text-left">Formats Played</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {player.formats.map(format => (
+                      <span key={format} className="px-3 py-1 bg-flag-500 text-white text-xs font-bold rounded-full uppercase">
+                        {format}
+                      </span>
+                    ))}
                   </div>
                 </div>
+
+                {player.sourceUrls.length > 0 && (
+                  <div className="w-full mt-6">
+                    <a 
+                      href={player.sourceUrls[0]} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center w-full py-2 px-4 border border-gray-200 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-50 transition-colors"
+                    >
+                      ESPNcricinfo Profile <ExternalLink className="ml-2 w-4 h-4" />
+                    </a>
+                  </div>
+                )}
+
+                <ShareButtons 
+                  title={`${player.fullName} - Bangladesh Cricketer Profile`} 
+                  url={window.location.href} 
+                />
               </div>
             </div>
           </div>
@@ -90,7 +102,7 @@ export default function PlayerDetailPage() {
                 Biography
               </h2>
               <p className="text-gray-600 leading-relaxed text-lg">
-                {player.bio}
+                {player.bioEn}
               </p>
             </div>
 
@@ -101,44 +113,17 @@ export default function PlayerDetailPage() {
                 Career Statistics
               </h2>
               
-              <div className="overflow-x-auto">
-                <table className="w-full text-left">
-                  <thead>
-                    <tr className="border-b border-gray-100">
-                      <th className="pb-4 font-semibold text-gray-400 uppercase text-xs tracking-wider">Format</th>
-                      <th className="pb-4 font-semibold text-gray-900">Matches</th>
-                      <th className="pb-4 font-semibold text-gray-900">Runs</th>
-                      <th className="pb-4 font-semibold text-gray-900">Wickets</th>
-                      <th className="pb-4 font-semibold text-gray-900">Avg</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-50">
-                    {['Test', 'ODI', 'T20'].map((format) => (
-                      <tr key={format} className="hover:bg-gray-50 transition-colors">
-                        <td className="py-4 font-bold text-flag-500">{format}</td>
-                        <td className="py-4 text-gray-600">{player.stats[0][format.toLowerCase() as keyof typeof player.stats[0]]}</td>
-                        <td className="py-4 text-gray-600">{player.stats[1][format.toLowerCase() as keyof typeof player.stats[1]]}</td>
-                        <td className="py-4 text-gray-600">{player.stats[2][format.toLowerCase() as keyof typeof player.stats[2]]}</td>
-                        <td className="py-4 text-gray-600">{player.stats[3][format.toLowerCase() as keyof typeof player.stats[3]]}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+              <PlayerStatsTable stats={player.statsSummary} />
             </div>
 
-            {/* Achievements Placeholder */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-flag-red-500 p-6 rounded-2xl text-white">
-                <Award className="w-8 h-8 mb-4 text-flag-gold-400" />
-                <h3 className="text-xl font-bold mb-2">ICC Ranking</h3>
-                <p className="text-flag-red-200">Consistently ranked #1 All-rounder for over a decade.</p>
-              </div>
-              <div className="bg-flag-500 p-6 rounded-2xl text-white">
-                <Trophy className="w-8 h-8 mb-4 text-flag-gold-400" />
-                <h3 className="text-xl font-bold mb-2">Player of the Series</h3>
-                <p className="text-flag-red-200">Multiple awards in major ICC tournaments and bilateral series.</p>
-              </div>
+            {/* Era Tags */}
+            <div className="flex flex-wrap gap-3">
+              {player.eraTags.map(tag => (
+                <div key={tag} className="bg-white px-4 py-2 rounded-xl shadow-sm border border-gray-100 flex items-center space-x-2">
+                  <Award className="w-4 h-4 text-flag-gold-400" />
+                  <span className="text-sm font-bold text-gray-700">{tag} Era</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
