@@ -42,4 +42,4 @@ A comprehensive biography portal for Bangladesh cricketers. Built with React, Vi
 - `src/App.tsx`: Routing and main application structure.
 
 ---
-Made with ❤️ for Bangladesh Cricket. Joy Bangla! 🇧🇩
+Made with ❤️ for Bangladesh Cricket.🇧🇩
