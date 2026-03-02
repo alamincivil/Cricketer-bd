@@ -20,9 +20,12 @@ export default function PlayerCard({ player }: PlayerCardProps) {
         <h3 className="mt-4 text-xl font-bold text-gray-900 group-hover:text-flag-500 transition-colors">
           {player.knownAs}
         </h3>
-        <p className="text-flag-500 font-bold text-sm uppercase tracking-wider mb-3">
+        <p className="text-flag-500 font-bold text-sm uppercase tracking-wider mb-1">
           {player.role}
         </p>
+        <div className="text-[11px] text-gray-400 font-medium mb-3">
+          {Object.values(player.statsSummary).reduce((acc, curr) => acc + (curr?.runs || 0), 0).toLocaleString()} Runs • {Object.values(player.statsSummary).reduce((acc, curr) => acc + (curr?.wickets || 0), 0).toLocaleString()} Wickets
+        </div>
 
         <div className="flex flex-wrap justify-center gap-2 mb-4">
           {player.formats.map(format => (

@@ -5,6 +5,7 @@ import SearchBar from '../components/SearchBar';
 import FilterPanel, { FilterState } from '../components/FilterPanel';
 import { SkeletonGrid } from '../components/PlayerCardSkeleton';
 import MobileFilterToggle from '../components/MobileFilterToggle';
+import Analytics from '../components/Analytics';
 
 export default function PlayersPage() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -26,7 +27,8 @@ export default function PlayersPage() {
   }, [searchQuery, filters]);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+    <Analytics event={searchQuery ? 'search' : undefined} params={{ query: searchQuery }}>
+      <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
       <div className="mb-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-2">Our Players</h1>
         <p className="text-gray-500 mb-8">The pride of Bangladesh Cricket across generations.</p>
@@ -78,5 +80,6 @@ export default function PlayersPage() {
         activeCount={activeFilterCount} 
       />
     </div>
+    </Analytics>
   );
 }

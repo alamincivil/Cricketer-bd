@@ -21,6 +21,7 @@ export interface Player {
   eraTags: string[];
   statsSummary: StatsSummary;
   bioEn: string;
+  bioBn: string;
   sourceUrls: string[];
   imageUrl?: string;
 }

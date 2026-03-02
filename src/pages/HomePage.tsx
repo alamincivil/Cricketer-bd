@@ -4,6 +4,7 @@ import { Trophy, Users, Star, ArrowRight } from 'lucide-react';
 import { getAllPlayers } from '../services/players';
 import PlayerCard from '../components/PlayerCard';
 import StatsHighlight from '../components/StatsHighlight';
+import EraHighlight from '../components/EraHighlight';
 
 export default function HomePage() {
   const featuredPlayers = getAllPlayers().slice(0, 6);
@@ -51,6 +52,11 @@ export default function HomePage() {
       {/* Stats Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-24 relative z-20">
         <StatsHighlight />
+      </section>
+
+      {/* Era Highlight */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <EraHighlight />
       </section>
 
       {/* Featured Players */}

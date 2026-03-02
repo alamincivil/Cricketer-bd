@@ -47,5 +47,17 @@ The ultimate biography portal for Bangladesh cricketers. Explore career stats, s
 | :---: | :---: | :---: |
 | ![Home](https://picsum.photos/seed/cricket-home/800/600) | ![Players](https://picsum.photos/seed/cricket-list/800/600) | ![Detail](https://picsum.photos/seed/cricket-detail/800/600) |
 
+## 📊 Analytics Setup
+
+Cricketer.bd uses Google Analytics 4 (GA4) to track user engagement.
+
+1.  **Google Analytics**: Create a GA4 property and get your `G-XXXXXXXXXX` measurement ID.
+2.  **Configuration**: Replace `GA_MEASUREMENT_ID` in `public/google-analytics.html` and `G-XXXXXXXXXX` in `public/gtag-config.js` with your actual ID.
+3.  **Tracking**: The app automatically tracks:
+    *   `page_view`: All page navigations.
+    *   `player_view`: When a user visits a player's profile.
+    *   `search`: When a user performs a search.
+    *   `language_toggle`: When a user switches between English and Bangla.
+
 ## License
 MIT License. 🇧🇩
