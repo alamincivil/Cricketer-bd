@@ -5,7 +5,7 @@ The ultimate biography portal for Bangladesh cricketers. Explore career stats, s
 **LIVE:** [https://cricketer.bd](https://cricketer.bd)
 
 ## Features
-- **50 Legendary Players**: Comprehensive documentation of Bangladesh's finest cricketers across three decades.
+- **200 Legendary Players**: Comprehensive documentation of Bangladesh's finest cricketers across generations.
 - **Advanced Search**: Fuzzy search powered by `Fuse.js` to find players by name, role, or birthplace.
 - **Smart Filters**: Filter by Format (Test, ODI, T20I), Role, and Era (1990s–2020s).
 - **Mobile-First Design**: Fully responsive with a floating filter toggle for mobile users.
