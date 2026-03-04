@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Player } from '../types/player';
 import PlayerAvatar from './PlayerAvatar';
+import FavoriteButton from './FavoriteButton';
 import { ChevronRight } from 'lucide-react';
 
 interface PlayerCardProps {
@@ -10,10 +11,14 @@ interface PlayerCardProps {
 
 export default function PlayerCard({ player }: PlayerCardProps) {
   return (
-    <Link
-      to={`/players/${player.id}`}
-      className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-    >
+    <div className="relative group">
+      <div className="absolute top-4 right-4 z-10">
+        <FavoriteButton player={player} />
+      </div>
+      <Link
+        to={`/players/${player.id}`}
+        className="block bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+      >
       <div className="p-6 flex flex-col items-center text-center">
         <PlayerAvatar name={player.fullName} imageUrl={player.imageUrl} size="md" />
         
@@ -49,5 +54,6 @@ export default function PlayerCard({ player }: PlayerCardProps) {
         </div>
       </div>
     </Link>
+    </div>
   );
 }

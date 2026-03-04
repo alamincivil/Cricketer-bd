@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Trophy } from 'lucide-react';
+import { Menu, X, Trophy, Heart } from 'lucide-react';
+import { useFavorites } from '../hooks/useFavorites';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const { favoriteIds } = useFavorites();
 
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Players', path: '/players' },
+    { name: 'Captains', path: '/captains' },
+    { name: 'Leaders', path: '/leaders' },
     { name: 'About', path: '/about' },
   ];
 
@@ -25,6 +29,14 @@ export default function Header() {
               </div>
               <span className="text-xl font-bold tracking-tight">Cricketer.bd</span>
             </Link>
+          </div>
+
+          {/* Favorites Badge (Desktop) */}
+          <div className="hidden md:flex items-center ml-auto mr-8">
+            <div className="flex items-center space-x-1.5 bg-white/10 px-3 py-1.5 rounded-full border border-white/20">
+              <Heart className={`w-4 h-4 ${favoriteIds.length > 0 ? 'fill-flag-red-500 text-flag-red-500' : 'text-white'}`} />
+              <span className="text-xs font-bold">{favoriteIds.length}</span>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
@@ -57,6 +69,13 @@ export default function Header() {
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden bg-flag-600 border-t border-flag-500">
+          <div className="px-4 py-3 flex items-center justify-between border-b border-flag-500/50">
+            <span className="text-xs font-bold uppercase tracking-widest text-white/60">Your Favorites</span>
+            <div className="flex items-center space-x-2">
+              <Heart className={`w-4 h-4 ${favoriteIds.length > 0 ? 'fill-flag-red-500 text-flag-red-500' : 'text-white'}`} />
+              <span className="text-sm font-bold">{favoriteIds.length}</span>
+            </div>
+          </div>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
               <Link

@@ -35,10 +35,23 @@
     },
     "bioEn": "Shakib Al Hasan is widely regarded as the greatest cricketer Bangladesh has ever produced and one of the finest all-rounders in the history of the game. Born in Magura, Shakib's journey began at the BKSP, the national sports institute. He made his international debut in 2006 and quickly established himself as a vital cog in the team. Shakib's unique ability to contribute equally with both bat and ball allowed Bangladesh to find balance in their XI. He has consistently ranked as the world's number one all-rounder in all three formats for extended periods. His career highlights include leading Bangladesh to historic victories and being the first player to score 600 runs and take 10 wickets in a single World Cup (2019). Despite controversies, his impact on Bangladesh cricket remains unparalleled, serving as the backbone of the national side for over a decade and a half.",
     "bioBn": "সাকিব আল হাসানকে বাংলাদেশের সর্বকালের সেরা ক্রিকেটার এবং খেলার ইতিহাসের অন্যতম সেরা অলরাউন্ডার হিসেবে বিবেচনা করা হয়। মাগুরায় জন্ম নেওয়া সাকিবের যাত্রা শুরু হয়েছিল জাতীয় ক্রীড়া প্রতিষ্ঠান বিকেএসপিতে। ২০০৬ সালে তার আন্তর্জাতিক অভিষেক হয় এবং দ্রুতই তিনি দলের একটি গুরুত্বপূর্ণ অংশ হিসেবে নিজেকে প্রতিষ্ঠিত করেন। ব্যাট এবং বল উভয় ক্ষেত্রেই সমানভাবে অবদান রাখার সাকিবের অনন্য ক্ষমতা বাংলাদেশকে তাদের একাদশে ভারসাম্য খুঁজে পেতে সাহায্য করেছে। তিনি ধারাবাহিকভাবে দীর্ঘ সময়ের জন্য তিনটি ফরম্যাটেই বিশ্বের এক নম্বর অলরাউন্ডার হিসেবে র্যাঙ্কিংয়ে ছিলেন। তার ক্যারিয়ারের উল্লেখযোগ্য সাফল্যের মধ্যে রয়েছে বাংলাদেশকে ঐতিহাসিক বিজয়ে নেতৃত্ব দেওয়া এবং একটি বিশ্বকাপে (২০১৯) ৬০০ রান এবং ১০ উইকেট নেওয়া প্রথম খেলোয়াড় হওয়া। বিতর্ক সত্ত্বেও, বাংলাদেশ ক্রিকেটে তার প্রভাব অতুলনীয়, দেড় দশকেরও বেশি সময় ধরে জাতীয় দলের মেরুদণ্ড হিসেবে কাজ করছেন।",
+    "achievementsEn": [
+      "First player to score 600 runs and take 10 wickets in a single World Cup (2019)",
+      "Fastest to 3000 runs and 200 wickets in Tests",
+      "Only player to be ranked No. 1 all-rounder in all three formats simultaneously",
+      "Most wickets for Bangladesh in all three formats"
+    ],
+    "achievementsBn": [
+      "একক বিশ্বকাপে (২০১৯) ৬০০ রান এবং ১০ উইকেট নেওয়া প্রথম খেলোয়াড়",
+      "টেস্টে দ্রুততম ৩০০০ রান এবং ২০০ উইকেট",
+      "একই সাথে তিন ফরম্যাটেই ১ নম্বর অলরাউন্ডার হওয়া একমাত্র খেলোয়াড়",
+      "তিন ফরম্যাটেই বাংলাদেশের পক্ষে সর্বোচ্চ উইকেট শিকারী"
+    ],
     "sourceUrls": [
       "https://www.espncricinfo.com/cricketers/shakib-al-hasan-56143"
     ],
-    "imageUrl": "https://picsum.photos/seed/shakib/600/800"
+    "imageUrl": "https://picsum.photos/seed/shakib/600/800",
+    "district": "Magura"
   },
   {
     "id": "tamim-iqbal",
@@ -79,7 +92,8 @@
     "sourceUrls": [
       "https://www.espncricinfo.com/cricketers/tamim-iqbal-56194"
     ],
-    "imageUrl": "https://picsum.photos/seed/tamim/600/800"
+    "imageUrl": "https://picsum.photos/seed/tamim/600/800",
+    "district": "Sylhet"
   },
   {
     "id": "mushfiqur-rahim",
@@ -120,7 +134,8 @@
     "sourceUrls": [
       "https://www.espncricinfo.com/cricketers/mushfiqur-rahim-56029"
     ],
-    "imageUrl": "https://picsum.photos/seed/mushfiq/600/800"
+    "imageUrl": "https://picsum.photos/seed/mushfiq/600/800",
+    "district": "Bogra"
   },
   {
     "id": "mashrafe-mortaza",
@@ -160,7 +175,8 @@
     "sourceUrls": [
       "https://www.espncricinfo.com/cricketers/mashrafe-mortaza-56007"
     ],
-    "imageUrl": "https://picsum.photos/seed/mashrafe/600/800"
+    "imageUrl": "https://picsum.photos/seed/mashrafe/600/800",
+    "district": "Narail"
   },
   {
     "id": "mahmudullah-riyad",
@@ -201,7 +217,8 @@
     "sourceUrls": [
       "https://www.espncricinfo.com/cricketers/mahmudullah-56025"
     ],
-    "imageUrl": "https://picsum.photos/seed/mahmudullah/600/800"
+    "imageUrl": "https://picsum.photos/seed/mahmudullah/600/800",
+    "district": "Mymensingh"
   },
   {
     "id": "litton-das",
@@ -243,7 +260,8 @@
       "https://www.espncricinfo.com/cricketers/litton-das-536936",
       "https://www.espncricinfo.com/cricketers/litton-das-530845"
     ],
-    "imageUrl": "https://picsum.photos/seed/litton/600/800"
+    "imageUrl": "https://picsum.photos/seed/litton/600/800",
+    "district": "Dhaka"
   },
   {
     "id": "mustafizur-rahman",
@@ -284,7 +302,8 @@
     "sourceUrls": [
       "https://www.espncricinfo.com/cricketers/mustafizur-rahman-330902"
     ],
-    "imageUrl": "https://picsum.photos/seed/mustafiz/600/800"
+    "imageUrl": "https://picsum.photos/seed/mustafiz/600/800",
+    "district": "Satkhira"
   },
   {
     "id": "mohammad-ashraful",
@@ -549,7 +568,8 @@
       "https://www.espncricinfo.com/cricketers/jahanara-alam-373464",
       "https://www.espncricinfo.com/cricketers/jahanara-alam-350679"
     ],
-    "imageUrl": "https://picsum.photos/seed/jahanara/600/800"
+    "imageUrl": "https://picsum.photos/seed/jahanara/600/800",
+    "district": "Dhaka"
   },
   {
     "id": "najmul-hossain-shanto",
@@ -591,7 +611,8 @@
       "https://www.espncricinfo.com/cricketers/najmul-hossain-shanto-793867",
       "https://www.espncricinfo.com/cricketers/najmul-hossain-shanto-793307"
     ],
-    "imageUrl": "https://picsum.photos/seed/shanto/600/800"
+    "imageUrl": "https://picsum.photos/seed/shanto/600/800",
+    "district": "Rajshahi"
   },
   {
     "id": "akbar-ali",
@@ -626,7 +647,8 @@
       "https://www.espncricinfo.com/cricketers/akbar-ali-1077983",
       "https://www.espncricinfo.com/cricketers/akbar-ali-1125161"
     ],
-    "imageUrl": "https://picsum.photos/seed/akbar/600/800"
+    "imageUrl": "https://picsum.photos/seed/akbar/600/800",
+    "district": "Rangpur"
   },
   {
     "id": "nurul-abedin",
@@ -1221,7 +1243,8 @@
       "https://www.espncricinfo.com/cricketers/taskin-ahmed-538506",
       "https://www.espncricinfo.com/cricketers/taskin-ahmed-551379"
     ],
-    "imageUrl": "https://picsum.photos/seed/taskin/600/800"
+    "imageUrl": "https://picsum.photos/seed/taskin/600/800",
+    "district": "Dhaka"
   },
   {
     "id": "elias-sunny",
@@ -1401,7 +1424,8 @@
     "sourceUrls": [
       "https://www.espncricinfo.com/cricketers/mominul-haque-374057"
     ],
-    "imageUrl": "https://picsum.photos/seed/mominul/600/800"
+    "imageUrl": "https://picsum.photos/seed/mominul/600/800",
+    "district": "Dhaka"
   },
   {
     "id": "anamul-haque",
@@ -4148,7 +4172,8 @@
     "sourceUrls": [
       "https://www.espncricinfo.com/cricketers/mehidy-hasan-miraz-629070"
     ],
-    "imageUrl": "https://picsum.photos/seed/miraz/600/800"
+    "imageUrl": "https://picsum.photos/seed/miraz/600/800",
+    "district": "Khulna"
   },
   {
     "id": "mosaddek-hossain",

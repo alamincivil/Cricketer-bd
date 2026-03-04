@@ -22,6 +22,18 @@ export interface Player {
   statsSummary: StatsSummary;
   bioEn: string;
   bioBn: string;
+  achievementsEn?: string[];
+  achievementsBn?: string[];
   sourceUrls: string[];
   imageUrl?: string;
+  district: string;
+}
+
+export interface LeaderStat {
+  player: Player;
+  matches: number;
+  runs?: number;
+  wickets?: number;
+  average?: number;
+  strikeRate?: number;
 }

@@ -1,65 +1,51 @@
 import { useState, useEffect, useCallback } from 'react';
-import { Player } from '../types/player';
-
-export interface FavoritePlayer {
-  id: string;
-  name: string;
-  role: string;
-  imageUrl?: string;
-}
 
 const FAVORITES_KEY = 'cricketer.bd:favorites';
 
 export const useFavorites = () => {
-  const [favorites, setFavorites] = useState<FavoritePlayer[]>([]);
-
-  // Load favorites from localStorage on mount
-  useEffect(() => {
+  const [favoriteIds, setFavoriteIds] = useState<string[]>(() => {
     const saved = localStorage.getItem(FAVORITES_KEY);
     if (saved) {
       try {
-        setFavorites(JSON.parse(saved));
+        return JSON.parse(saved);
       } catch (e) {
         console.error('Failed to parse favorites', e);
+        return [];
       }
     }
-  }, []);
+    return [];
+  });
 
   // Save favorites to localStorage whenever they change
   useEffect(() => {
-    localStorage.setItem(FAVORITES_KEY, JSON.stringify(favorites));
-  }, [favorites]);
+    localStorage.setItem(FAVORITES_KEY, JSON.stringify(favoriteIds));
+  }, [favoriteIds]);
 
   const isFavorite = useCallback((id: string) => {
-    return favorites.some(f => f.id === id);
-  }, [favorites]);
+    return favoriteIds.includes(id);
+  }, [favoriteIds]);
 
-  const addFavorite = useCallback((player: Player) => {
-    setFavorites(prev => {
-      if (prev.some(f => f.id === player.id)) return prev;
-      return [...prev, {
-        id: player.id,
-        name: player.fullName,
-        role: player.role,
-        imageUrl: player.imageUrl
-      }];
+  const addFavorite = useCallback((id: string) => {
+    setFavoriteIds(prev => {
+      if (prev.includes(id)) return prev;
+      return [...prev, id];
     });
   }, []);
 
   const removeFavorite = useCallback((id: string) => {
-    setFavorites(prev => prev.filter(f => f.id !== id));
+    setFavoriteIds(prev => prev.filter(favId => favId !== id));
   }, []);
 
-  const toggleFavorite = useCallback((player: Player) => {
-    if (isFavorite(player.id)) {
-      removeFavorite(player.id);
+  const toggleFavorite = useCallback((id: string) => {
+    if (favoriteIds.includes(id)) {
+      removeFavorite(id);
     } else {
-      addFavorite(player);
+      addFavorite(id);
     }
-  }, [isFavorite, addFavorite, removeFavorite]);
+  }, [favoriteIds, addFavorite, removeFavorite]);
 
   return {
-    favorites,
+    favoriteIds,
     isFavorite,
     addFavorite,
     removeFavorite,

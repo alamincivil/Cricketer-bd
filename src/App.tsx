@@ -8,6 +8,9 @@ import {
   PlayersPage, 
   PlayerDetailPage, 
   EraPage,
+  CaptainsPage,
+  LeadersPage,
+  DistrictsPage,
   AboutPage, 
   NotFoundPage 
 } from './utils/lazyLoad';
@@ -29,6 +32,10 @@ export default function App() {
               <Route path="players" element={<PlayersPage />} />
               <Route path="players/:id" element={<PlayerDetailPage />} />
               <Route path="era/:era" element={<EraPage />} />
+              <Route path="captains" element={<CaptainsPage />} />
+              <Route path="leaders" element={<LeadersPage />} />
+              <Route path="districts" element={<DistrictsPage />} />
+              <Route path="districts/:district" element={<DistrictsPage />} />
               <Route path="about" element={<AboutPage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Route>

@@ -20,7 +20,7 @@ export default function FavoriteButton({ player, showLabel = false }: FavoriteBu
       onClick={(e) => {
         e.preventDefault();
         e.stopPropagation();
-        toggleFavorite(player);
+        toggleFavorite(player.id);
       }}
       className={`flex items-center space-x-2 p-2 rounded-full transition-colors ${
         active 
