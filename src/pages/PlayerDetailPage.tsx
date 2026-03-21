@@ -51,22 +51,42 @@ export default function PlayerDetailPage() {
         />
         {/* Header/Banner */}
         <div className="bg-flag-500 h-56 md:h-72 relative overflow-hidden">
+          {/* Decorative background elements */}
           <div className="absolute inset-0 bg-gradient-to-br from-flag-600 via-flag-500 to-flag-500/80" />
           <div className="absolute -right-16 -top-16 w-72 h-72 rounded-full bg-white/5" />
           <div className="absolute -left-8 -bottom-8 w-48 h-48 rounded-full bg-white/5" />
-          
-          <div className="max-w-7xl mx-auto px-4 h-full flex items-end relative">
-            <Link to="/players" className="absolute top-8 left-4 md:left-8 text-white flex items-center hover:text-flag-gold-400 transition-colors">
+          <div className="absolute right-0 bottom-0 w-96 h-96 rounded-full bg-black/10 translate-x-1/3 translate-y-1/3" />
+
+          {/* Navigation row */}
+          <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 pt-8 flex items-center justify-between">
+            <Link to="/players" className="text-white flex items-center hover:text-flag-gold-400 transition-colors">
               <ArrowLeft className="w-5 h-5 mr-2" /> Back to Players
             </Link>
-            <div className="absolute top-8 right-4 md:right-8 flex items-center space-x-4">
+            <div className="flex items-center space-x-4">
               <FavoriteButton player={player} />
               <LanguageToggle />
             </div>
-            
-            <div className="absolute bottom-8 left-4 md:left-8 text-white">
-              <p className="text-xs font-bold uppercase tracking-widest text-white/60 mb-1">{player.role}</p>
-              <h1 className="text-3xl md:text-4xl font-black uppercase tracking-tight">{player.knownAs}</h1>
+          </div>
+
+          {/* Player name overlay at bottom of hero */}
+          <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 absolute bottom-0 left-0 right-0 pb-8">
+            <div className="flex items-end justify-between">
+              <div>
+                <span className="inline-flex items-center gap-1.5 bg-white/15 border border-white/20 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest text-white/80 mb-3">
+                  {player.role}
+                </span>
+                <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-white leading-none">
+                  {player.knownAs}
+                </h1>
+                <p className="text-white/60 text-sm font-medium mt-2">{player.fullName}</p>
+              </div>
+              <div className="hidden md:flex items-center gap-2">
+                {player.formats.map(format => (
+                  <span key={format} className="bg-white/15 border border-white/20 text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest">
+                    {format}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
