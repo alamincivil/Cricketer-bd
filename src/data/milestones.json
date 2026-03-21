@@ -1,0 +1,202 @@
+[
+  {
+    "id": "1997-icc-trophy",
+    "date": "1997-04-13",
+    "title": "ICC Trophy Champions",
+    "description": "Bangladesh defeated Kenya in the final of the ICC Trophy in Malaysia, securing their first-ever World Cup qualification.",
+    "players": ["akram-khan", "khaled-mashud"],
+    "era": "pioneers"
+  },
+  {
+    "id": "1999-wc-pakistan",
+    "date": "1999-05-31",
+    "title": "First World Cup Win vs Pakistan",
+    "description": "A historic 62-run victory over Pakistan in Northampton, which fast-tracked Bangladesh's path to Test status.",
+    "players": ["akram-khan", "khaled-mahmud"],
+    "era": "pioneers"
+  },
+  {
+    "id": "2000-test-status",
+    "date": "2000-06-26",
+    "title": "Full Test Status Granted",
+    "description": "Bangladesh became the 10th Test-playing nation after being granted full membership by the ICC.",
+    "players": [],
+    "era": "pioneers"
+  },
+  {
+    "id": "2000-inaugural-test",
+    "date": "2000-11-10",
+    "title": "Inaugural Test Match",
+    "description": "Bangladesh played their first Test match against India in Dhaka. Aminul Islam scored a historic century.",
+    "players": ["aminul-islam"],
+    "era": "pioneers"
+  },
+  {
+    "id": "2004-first-odi-win-home",
+    "date": "2004-12-26",
+    "title": "First ODI Win at Home",
+    "description": "Bangladesh defeated India by 15 runs at the Bangabandhu National Stadium, their first ODI win on home soil.",
+    "players": ["mashrafe-mortaza", "aftab-ahmed"],
+    "era": "golden-era"
+  },
+  {
+    "id": "2005-first-test-win",
+    "date": "2005-01-10",
+    "title": "First Test Match Victory",
+    "description": "Bangladesh secured their first-ever Test win by defeating Zimbabwe by 226 runs in Chittagong.",
+    "players": ["habibul-bashar", "ennamul-haque-jr"],
+    "era": "golden-era"
+  },
+  {
+    "id": "2005-cardiff-upset",
+    "date": "2005-06-18",
+    "title": "The Cardiff Miracle",
+    "description": "Mohammad Ashraful's century led Bangladesh to a stunning 5-wicket victory over world champions Australia.",
+    "players": ["mohammad-ashraful"],
+    "era": "golden-era"
+  },
+  {
+    "id": "2007-wc-india",
+    "date": "2007-03-17",
+    "title": "World Cup Upset vs India",
+    "description": "A young Bangladesh side defeated India by 5 wickets in Port of Spain, knocking them out of the World Cup.",
+    "players": ["mashrafe-mortaza", "tamim-iqbal", "mushfiqur-rahim", "shakib-al-hasan"],
+    "era": "golden-era"
+  },
+  {
+    "id": "2007-wc-south-africa",
+    "date": "2007-04-07",
+    "title": "Victory vs South Africa",
+    "description": "Bangladesh defeated the top-ranked South African side in the Super Eight stage of the 2007 World Cup.",
+    "players": ["mohammad-ashraful", "abdur-razzak"],
+    "era": "golden-era"
+  },
+  {
+    "id": "2009-shakib-no1",
+    "date": "2009-01-22",
+    "title": "Shakib Reaches No. 1",
+    "description": "Shakib Al Hasan became the first Bangladeshi player to be ranked as the No. 1 ODI all-rounder in the world.",
+    "players": ["shakib-al-hasan"],
+    "era": "golden-era"
+  },
+  {
+    "id": "2009-west-indies-sweep",
+    "date": "2009-07-20",
+    "title": "First Overseas Test Series Win",
+    "description": "Bangladesh secured a 2-0 Test series sweep against the West Indies in the Caribbean.",
+    "players": ["shakib-al-hasan", "mahmudullah"],
+    "era": "golden-era"
+  },
+  {
+    "id": "2010-whitewash-nz",
+    "date": "2010-10-17",
+    "title": "Banglawash vs New Zealand",
+    "description": "Bangladesh completed a historic 4-0 ODI series sweep against New Zealand in Dhaka.",
+    "players": ["shakib-al-hasan", "suhrawardi-shuvo"],
+    "era": "modern-stars"
+  },
+  {
+    "id": "2012-asia-cup-final",
+    "date": "2012-03-22",
+    "title": "Asia Cup Final Appearance",
+    "description": "Bangladesh reached their first Asia Cup final, narrowly losing to Pakistan by just 2 runs.",
+    "players": ["shakib-al-hasan", "mushfiqur-rahim"],
+    "era": "modern-stars"
+  },
+  {
+    "id": "2013-mushfiq-double",
+    "date": "2013-03-11",
+    "title": "First Test Double Century",
+    "description": "Mushfiqur Rahim became the first Bangladeshi to score a double century in Test cricket (200 vs Sri Lanka).",
+    "players": ["mushfiqur-rahim"],
+    "era": "modern-stars"
+  },
+  {
+    "id": "2015-wc-quarterfinal",
+    "date": "2015-03-09",
+    "title": "World Cup Quarter-Final",
+    "description": "Bangladesh defeated England to reach the knockout stages of a World Cup for the first time.",
+    "players": ["mahmudullah", "rubel-hossain"],
+    "era": "modern-stars"
+  },
+  {
+    "id": "2015-home-dominance",
+    "date": "2015-07-15",
+    "title": "Series Wins vs Big Three",
+    "description": "Bangladesh won consecutive ODI series against Pakistan, India, and South Africa at home.",
+    "players": ["mustafizur-rahman", "tamim-iqbal", "soumya-sarkar"],
+    "era": "modern-stars"
+  },
+  {
+    "id": "2016-test-win-england",
+    "date": "2016-10-30",
+    "title": "First Test Win vs England",
+    "description": "Mehidy Hasan Miraz's 12 wickets led Bangladesh to a historic Test victory over England in Dhaka.",
+    "players": ["mehidy-hasan-miraz", "tamim-iqbal"],
+    "era": "modern-stars"
+  },
+  {
+    "id": "2017-100th-test-win",
+    "date": "2017-03-19",
+    "title": "100th Test Match Victory",
+    "description": "Bangladesh celebrated their 100th Test match with a victory over Sri Lanka in Colombo.",
+    "players": ["tamim-iqbal", "shakib-al-hasan"],
+    "era": "modern-stars"
+  },
+  {
+    "id": "2017-ct-semifinal",
+    "date": "2017-06-09",
+    "title": "Champions Trophy Semi-Final",
+    "description": "A record partnership between Shakib and Mahmudullah helped Bangladesh reach the CT semi-finals.",
+    "players": ["shakib-al-hasan", "mahmudullah"],
+    "era": "modern-stars"
+  },
+  {
+    "id": "2017-test-win-australia",
+    "date": "2017-08-30",
+    "title": "First Test Win vs Australia",
+    "description": "Shakib Al Hasan's 10-wicket haul secured Bangladesh's first-ever Test victory against Australia.",
+    "players": ["shakib-al-hasan", "tamim-iqbal"],
+    "era": "modern-stars"
+  },
+  {
+    "id": "2018-asia-cup-final",
+    "date": "2018-09-28",
+    "title": "Another Asia Cup Final",
+    "description": "Bangladesh reached the Asia Cup final again, losing to India on the final ball of the match.",
+    "players": ["litton-das", "mustafizur-rahman"],
+    "era": "modern-stars"
+  },
+  {
+    "id": "2020-u19-wc-champions",
+    "date": "2020-02-09",
+    "title": "U19 World Cup Champions",
+    "description": "Bangladesh won their first-ever ICC global trophy by defeating India in the U19 World Cup final.",
+    "players": ["akbar-ali", "shoriful-islam"],
+    "era": "modern-stars"
+  },
+  {
+    "id": "2022-nz-test-win",
+    "date": "2022-01-05",
+    "title": "Historic Test Win in NZ",
+    "description": "Bangladesh defeated world champions New Zealand in Mount Maunganui, their first win in NZ in any format.",
+    "players": ["ebadat-hossain", "mominul-haque"],
+    "era": "modern-stars"
+  },
+  {
+    "id": "2023-t20-sweep-england",
+    "date": "2023-03-14",
+    "title": "T20I Series Sweep vs England",
+    "description": "Bangladesh completed a 3-0 T20I series whitewash against world champions England.",
+    "players": ["najmul-hossain-shanto", "taskin-ahmed"],
+    "era": "modern-stars"
+  },
+  {
+    "id": "2024-pakistan-test-sweep",
+    "date": "2024-09-03",
+    "title": "Test Series Sweep in Pakistan",
+    "description": "Bangladesh secured a historic 2-0 Test series victory in Pakistan, their first-ever series win against them.",
+    "players": ["mehidy-hasan-miraz", "mushfiqur-rahim", "litton-das"],
+    "era": "modern-stars"
+  }
+]

@@ -10,6 +10,12 @@ export interface StatsSummary {
   t20i?: FormatStats;
 }
 
+export interface Award {
+  name: string;
+  year: number;
+  significance: string;
+}
+
 export interface Player {
   id: string;
   fullName: string;
@@ -24,6 +30,7 @@ export interface Player {
   bioBn: string;
   achievementsEn?: string[];
   achievementsBn?: string[];
+  awards?: Award[];
   sourceUrls: string[];
   imageUrl?: string;
   district: string;

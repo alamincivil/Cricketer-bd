@@ -76,6 +76,40 @@ export const getDistricts = (): string[] => {
   return Array.from(districts).sort();
 };
 
+export const getPlayersByEra = (eraTags: string[]): Player[] => {
+  return players.filter(p => 
+    p.eraTags.some(tag => eraTags.includes(tag))
+  );
+};
+
+export const getEraStats = (eraTags: string[]): { mostMatches: number; mostRuns: number; mostWickets: number } => {
+  let mostMatches = 0;
+  let mostRuns = 0;
+  let mostWickets = 0;
+
+  players.forEach(p => {
+    if (p.eraTags.some(tag => eraTags.includes(tag))) {
+      let playerMatches = 0;
+      let playerRuns = 0;
+      let playerWickets = 0;
+
+      Object.values(p.statsSummary).forEach(stats => {
+        if (stats) {
+          playerMatches += stats.matches;
+          playerRuns += stats.runs;
+          playerWickets += stats.wickets;
+        }
+      });
+
+      if (playerMatches > mostMatches) mostMatches = playerMatches;
+      if (playerRuns > mostRuns) mostRuns = playerRuns;
+      if (playerWickets > mostWickets) mostWickets = playerWickets;
+    }
+  });
+
+  return { mostMatches, mostRuns, mostWickets };
+};
+
 const fuse = new Fuse(players, {
   keys: ['fullName', 'knownAs', 'role', 'birthPlace'],
   threshold: 0.3,

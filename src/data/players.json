@@ -51,7 +51,19 @@
       "https://www.espncricinfo.com/cricketers/shakib-al-hasan-56143"
     ],
     "imageUrl": "https://picsum.photos/seed/shakib/600/800",
-    "district": "Magura"
+    "district": "Magura",
+    "awards": [
+      {
+        "name": "ICC ODI Team of the Year",
+        "year": 2021,
+        "significance": "Recognized as one of the best ODI players globally."
+      },
+      {
+        "name": "Wisden Cricketer of the Year",
+        "year": 2009,
+        "significance": "First Bangladeshi to receive this prestigious honor."
+      }
+    ]
   },
   {
     "id": "tamim-iqbal",
@@ -93,7 +105,14 @@
       "https://www.espncricinfo.com/cricketers/tamim-iqbal-56194"
     ],
     "imageUrl": "https://picsum.photos/seed/tamim/600/800",
-    "district": "Sylhet"
+    "district": "Sylhet",
+    "awards": [
+      {
+        "name": "Wisden Cricketer of the Year",
+        "year": 2011,
+        "significance": "Honored for his outstanding performance in English conditions."
+      }
+    ]
   },
   {
     "id": "mushfiqur-rahim",
@@ -135,7 +154,14 @@
       "https://www.espncricinfo.com/cricketers/mushfiqur-rahim-56029"
     ],
     "imageUrl": "https://picsum.photos/seed/mushfiq/600/800",
-    "district": "Bogra"
+    "district": "Bogra",
+    "awards": [
+      {
+        "name": "ICC Player of the Month",
+        "year": 2021,
+        "significance": "Awarded for his match-winning performances against Sri Lanka."
+      }
+    ]
   },
   {
     "id": "mashrafe-mortaza",
@@ -176,7 +202,14 @@
       "https://www.espncricinfo.com/cricketers/mashrafe-mortaza-56007"
     ],
     "imageUrl": "https://picsum.photos/seed/mashrafe/600/800",
-    "district": "Narail"
+    "district": "Narail",
+    "awards": [
+      {
+        "name": "Most Successful Captain",
+        "year": 2018,
+        "significance": "Led Bangladesh to their most successful period in ODI cricket."
+      }
+    ]
   },
   {
     "id": "mahmudullah-riyad",
@@ -218,7 +251,14 @@
       "https://www.espncricinfo.com/cricketers/mahmudullah-56025"
     ],
     "imageUrl": "https://picsum.photos/seed/mahmudullah/600/800",
-    "district": "Mymensingh"
+    "district": "Mymensingh",
+    "awards": [
+      {
+        "name": "ICC World Cup 2015 Century",
+        "year": 2015,
+        "significance": "First Bangladeshi to score a World Cup century."
+      }
+    ]
   },
   {
     "id": "litton-das",
@@ -261,7 +301,14 @@
       "https://www.espncricinfo.com/cricketers/litton-das-530845"
     ],
     "imageUrl": "https://picsum.photos/seed/litton/600/800",
-    "district": "Dhaka"
+    "district": "Dhaka",
+    "awards": [
+      {
+        "name": "Highest Individual Score in ODIs",
+        "year": 2020,
+        "significance": "Scored 176 against Zimbabwe, the highest for Bangladesh."
+      }
+    ]
   },
   {
     "id": "mustafizur-rahman",
@@ -303,7 +350,14 @@
       "https://www.espncricinfo.com/cricketers/mustafizur-rahman-330902"
     ],
     "imageUrl": "https://picsum.photos/seed/mustafiz/600/800",
-    "district": "Satkhira"
+    "district": "Satkhira",
+    "awards": [
+      {
+        "name": "ICC Emerging Player of the Year",
+        "year": 2016,
+        "significance": "First Bangladeshi to win an ICC annual award."
+      }
+    ]
   },
   {
     "id": "mohammad-ashraful",
@@ -344,7 +398,19 @@
     "sourceUrls": [
       "https://www.espncricinfo.com/cricketers/mohammad-ashraful-55988"
     ],
-    "imageUrl": "https://picsum.photos/seed/ashraful/600/800"
+    "imageUrl": "https://picsum.photos/seed/ashraful/600/800",
+    "awards": [
+      {
+        "name": "Youngest Test Centurion",
+        "year": 2001,
+        "significance": "Scored a century on debut at age 17 against Sri Lanka."
+      },
+      {
+        "name": "Wisden's Best Test Innings",
+        "year": 2005,
+        "significance": "His 158* against England was highly acclaimed."
+      }
+    ]
   },
   {
     "id": "abdur-razzak",
@@ -386,7 +452,14 @@
       "https://www.espncricinfo.com/cricketers/abdur-razzak-56044",
       "https://www.espncricinfo.com/cricketers/abdur-razzak-55952"
     ],
-    "imageUrl": "https://picsum.photos/seed/razzak/600/800"
+    "imageUrl": "https://picsum.photos/seed/razzak/600/800",
+    "awards": [
+      {
+        "name": "First Bangladeshi to 200 ODI Wickets",
+        "year": 2013,
+        "significance": "Reached the milestone against Zimbabwe."
+      }
+    ]
   },
   {
     "id": "habibul-bashar",
@@ -421,7 +494,14 @@
       "https://www.espncricinfo.com/cricketers/habibul-bashar-55989",
       "https://www.espncricinfo.com/cricketers/habibul-bashar-55997"
     ],
-    "imageUrl": "https://picsum.photos/seed/bashar/600/800"
+    "imageUrl": "https://picsum.photos/seed/bashar/600/800",
+    "awards": [
+      {
+        "name": "First to 3000 Test Runs for Bangladesh",
+        "year": 2007,
+        "significance": "Solidified his place as the premier batsman of his era."
+      }
+    ]
   },
   {
     "id": "mohammad-rafique",
@@ -457,7 +537,14 @@
       "https://www.espncricinfo.com/cricketers/mohammad-rafique-56011",
       "https://www.espncricinfo.com/cricketers/mohammad-rafique-56141"
     ],
-    "imageUrl": "https://picsum.photos/seed/rafique/600/800"
+    "imageUrl": "https://picsum.photos/seed/rafique/600/800",
+    "awards": [
+      {
+        "name": "First to 100 Test Wickets for Bangladesh",
+        "year": 2008,
+        "significance": "A landmark achievement for Bangladesh's bowling."
+      }
+    ]
   },
   {
     "id": "salma-khatun",
@@ -494,7 +581,14 @@
       "https://www.espncricinfo.com/cricketers/salma-khatun-373466",
       "https://www.espncricinfo.com/cricketers/salma-khatun-350677"
     ],
-    "imageUrl": "https://picsum.photos/seed/salma/600/800"
+    "imageUrl": "https://picsum.photos/seed/salma/600/800",
+    "awards": [
+      {
+        "name": "ICC Women's T20I Team of the Year",
+        "year": 2018,
+        "significance": "Recognized for her exceptional spin bowling."
+      }
+    ]
   },
   {
     "id": "rumana-ahmed",
@@ -531,7 +625,14 @@
       "https://www.espncricinfo.com/cricketers/rumana-ahmed-373465",
       "https://www.espncricinfo.com/cricketers/rumana-ahmed-350681"
     ],
-    "imageUrl": "https://picsum.photos/seed/rumana/600/800"
+    "imageUrl": "https://picsum.photos/seed/rumana/600/800",
+    "awards": [
+      {
+        "name": "First Hat-trick in Women's ODIs for Bangladesh",
+        "year": 2016,
+        "significance": "Achieved against Ireland."
+      }
+    ]
   },
   {
     "id": "jahanara-alam",
@@ -1244,7 +1345,14 @@
       "https://www.espncricinfo.com/cricketers/taskin-ahmed-551379"
     ],
     "imageUrl": "https://picsum.photos/seed/taskin/600/800",
-    "district": "Dhaka"
+    "district": "Dhaka",
+    "awards": [
+      {
+        "name": "World Cup Hat-trick",
+        "year": 2015,
+        "significance": "First Bangladeshi to take a hat-trick in a World Cup match."
+      }
+    ]
   },
   {
     "id": "elias-sunny",
@@ -1425,7 +1533,14 @@
       "https://www.espncricinfo.com/cricketers/mominul-haque-374057"
     ],
     "imageUrl": "https://picsum.photos/seed/mominul/600/800",
-    "district": "Dhaka"
+    "district": "Dhaka",
+    "awards": [
+      {
+        "name": "Most Test Centuries for Bangladesh",
+        "year": 2021,
+        "significance": "Holds the record for most Test hundreds for the country."
+      }
+    ]
   },
   {
     "id": "anamul-haque",
@@ -4173,7 +4288,14 @@
       "https://www.espncricinfo.com/cricketers/mehidy-hasan-miraz-629070"
     ],
     "imageUrl": "https://picsum.photos/seed/miraz/600/800",
-    "district": "Khulna"
+    "district": "Khulna",
+    "awards": [
+      {
+        "name": "U-19 World Cup Player of the Tournament",
+        "year": 2016,
+        "significance": "Recognized as the best player in the youth World Cup."
+      }
+    ]
   },
   {
     "id": "mosaddek-hossain",

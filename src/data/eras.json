@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "pioneers",
+    "title": "1990s Pioneers",
+    "decade": "1990s",
+    "storyEn": "The 1990s marked the foundational years for Bangladesh cricket. It was a decade of struggle, hope, and eventual triumph. The journey began with participation in the ICC Trophy, where the 'Tigers' aimed to make their mark on the international stage. The defining moment of this era came in 1997, when Bangladesh won the ICC Trophy in Malaysia, defeating Kenya in a thrilling final. This victory earned them a spot in the 1999 World Cup. In that World Cup, Bangladesh pulled off one of the greatest upsets in cricket history by defeating Pakistan. This win was the catalyst that fast-tracked Bangladesh's application for Test status, which was eventually granted in 2000. Players like Akram Khan, Aminul Islam, and Khaled Mashud became household names, laying the groundwork for everything that followed.",
+    "eraTags": ["1990s"],
+    "highlightPlayer": "akram-khan"
+  },
+  {
+    "slug": "golden-era",
+    "title": "Golden Generation (2000s)",
+    "decade": "2000s",
+    "storyEn": "The 2000s was an era of transition and the emergence of world-class talent. Bangladesh played its inaugural Test match in November 2000 against India, with Aminul Islam scoring a historic century. While the early years of Test cricket were challenging, with a long streak of defeats, the mid-2000s saw the rise of the 'Golden Generation'. Players like Habibul Bashar, Mohammad Ashraful, and later, the 'Big Five'—Mashrafe Mortaza, Shakib Al Hasan, Tamim Iqbal, Mushfiqur Rahim, and Mahmudullah—began to transform the team's fortunes. Historic wins against Australia (Cardiff 2005), South Africa (2007 World Cup), and India (2007 World Cup) signaled that Bangladesh was no longer just a participant but a competitor. This decade established the core of the team that would dominate for the next 15 years.",
+    "eraTags": ["2000s"],
+    "highlightPlayer": "shakib-al-hasan"
+  },
+  {
+    "slug": "modern-stars",
+    "title": "Modern Stars (2010s+)",
+    "decade": "2010s-2020s",
+    "storyEn": "The modern era of Bangladesh cricket is characterized by consistency, professionalism, and a growing presence in the global top tier. From 2015 onwards, Bangladesh became a formidable force at home, winning series against Pakistan, India, and South Africa in quick succession. The 2015 World Cup quarter-final and the 2017 Champions Trophy semi-final appearances were major milestones. This era saw Shakib Al Hasan reach the pinnacle of world cricket as the number one all-rounder, while Tamim Iqbal and Mushfiqur Rahim broke almost every national batting record. The emergence of new stars like Mustafizur Rahman, Mehidy Hasan Miraz, and Litton Das ensured that the legacy of the senior players would continue. Today, Bangladesh is a team capable of defeating any opponent on their day, backed by a passionate fan base and a robust domestic structure.",
+    "eraTags": ["2010s", "2020s"],
+    "highlightPlayer": "mustafizur-rahman"
+  }
+]

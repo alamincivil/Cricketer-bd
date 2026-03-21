@@ -5,6 +5,7 @@ import { getAllPlayers } from '../services/players';
 import { getDistrictStats } from '../services/players';
 import PlayerCard from '../components/PlayerCard';
 import StatsHighlight from '../components/StatsHighlight';
+import LiveScores from '../components/LiveScores';
 import EraHighlight from '../components/EraHighlight';
 import DistrictCard from '../components/DistrictCard';
 
@@ -55,6 +56,23 @@ export default function HomePage() {
       {/* Stats Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-24 relative z-20">
         <StatsHighlight />
+      </section>
+
+      {/* Live Scores Section */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between mb-6">
+          <div>
+            <h2 className="text-3xl font-black text-gray-900 uppercase tracking-tight">
+              Bangladesh <span className="text-flag-500">Live</span>
+            </h2>
+            <p className="text-gray-500 font-medium text-sm">Current & recent match scores</p>
+          </div>
+          <div className="flex items-center gap-2 bg-flag-red-50 border border-flag-red-100 px-3 py-1.5 rounded-full">
+            <span className="w-2 h-2 rounded-full bg-flag-red-500 animate-pulse" />
+            <span className="text-xs font-bold text-flag-red-500 uppercase tracking-widest">Live</span>
+          </div>
+        </div>
+        <LiveScores />
       </section>
 
       {/* Era Highlight */}

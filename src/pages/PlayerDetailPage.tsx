@@ -152,6 +152,28 @@ export default function PlayerDetailPage() {
                 </div>
               )}
 
+              {/* Awards & Accolades */}
+              {player.awards && player.awards.length > 0 && (
+                <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                    <Award className="w-6 h-6 mr-2 text-flag-500" />
+                    {lang === 'en' ? 'Awards & Accolades' : 'পুরস্কার ও সম্মাননা'}
+                  </h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {player.awards.map((award, index) => (
+                      <div key={index} className="p-4 bg-gray-50 rounded-xl border border-gray-100 hover:border-flag-200 transition-colors group">
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="text-xs font-black text-flag-500 uppercase tracking-widest">{award.year}</span>
+                          <Trophy className="w-4 h-4 text-gray-300 group-hover:text-flag-gold-400 transition-colors" />
+                        </div>
+                        <h3 className="font-bold text-gray-900 mb-1">{award.name}</h3>
+                        <p className="text-xs text-gray-500 leading-relaxed">{award.significance}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* Career Stats */}
               <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">

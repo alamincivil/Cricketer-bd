@@ -12,6 +12,10 @@ import {
   LeadersPage,
   DistrictsPage,
   AboutPage, 
+  ComparisonPage,
+  MilestonesPage,
+  QuizPage,
+  FanZonePage,
   NotFoundPage 
 } from './utils/lazyLoad';
 
@@ -31,11 +35,15 @@ export default function App() {
               <Route index element={<HomePage />} />
               <Route path="players" element={<PlayersPage />} />
               <Route path="players/:id" element={<PlayerDetailPage />} />
-              <Route path="era/:era" element={<EraPage />} />
+              <Route path="era/:eraSlug" element={<EraPage />} />
               <Route path="captains" element={<CaptainsPage />} />
               <Route path="leaders" element={<LeadersPage />} />
               <Route path="districts" element={<DistrictsPage />} />
               <Route path="districts/:district" element={<DistrictsPage />} />
+              <Route path="compare" element={<ComparisonPage />} />
+              <Route path="milestones" element={<MilestonesPage />} />
+              <Route path="quiz" element={<QuizPage />} />
+              <Route path="fanzone" element={<FanZonePage />} />
               <Route path="about" element={<AboutPage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Route>

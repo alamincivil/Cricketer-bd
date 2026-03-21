@@ -5,28 +5,31 @@ import { motion } from 'motion/react';
 
 const eras = [
   {
-    id: '1990s',
+    id: 'pioneers',
     title: 'The Pioneers',
     description: 'The era of the first Test and the 1999 World Cup upset.',
     icon: History,
     color: 'bg-flag-red-500',
     accent: 'text-flag-red-100',
+    label: '1990s'
   },
   {
-    id: '2000s',
+    id: 'golden-era',
     title: 'The Golden Era',
     description: 'When Bangladesh gained Test status and produced its first superstars.',
     icon: Star,
     color: 'bg-flag-gold-400',
     accent: 'text-flag-gold-900',
+    label: '2000s'
   },
   {
-    id: '2010s',
+    id: 'modern-stars',
     title: 'The Modern Stars',
     description: 'A decade of dominance and consistent victories in all formats.',
     icon: Zap,
     color: 'bg-flag-500',
     accent: 'text-flag-green-100',
+    label: '2010s+'
   },
 ];
 
@@ -61,7 +64,7 @@ export default function EraHighlight() {
             viewport={{ once: true }}
           >
             <Link 
-              to={`/era/${era.id.toLowerCase()}`}
+              to={`/era/${era.id}`}
               className={`${era.color} p-8 rounded-[2rem] shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 block h-full relative overflow-hidden group`}
             >
               <div className="relative z-10">
@@ -75,7 +78,7 @@ export default function EraHighlight() {
                   {era.description}
                 </p>
                 <div className={`mt-8 flex items-center space-x-2 font-black uppercase tracking-widest text-xs ${era.accent}`}>
-                  <span>Explore {era.id}</span>
+                  <span>Explore {era.label}</span>
                   <History className="w-4 h-4" />
                 </div>
               </div>

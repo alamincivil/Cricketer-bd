@@ -13,6 +13,9 @@ export default function Header() {
     { name: 'Players', path: '/players' },
     { name: 'Captains', path: '/captains' },
     { name: 'Leaders', path: '/leaders' },
+    { name: 'Compare', path: '/compare' },
+    { name: 'Quiz', path: '/quiz' },
+    { name: 'Fan Zone', path: '/fanzone' },
     { name: 'About', path: '/about' },
   ];
 
@@ -45,11 +48,17 @@ export default function Header() {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-flag-gold-400 ${
+                className={`text-sm font-medium transition-colors hover:text-flag-gold-400 flex items-center gap-1.5 ${
                   isActive(link.path) ? 'text-flag-gold-400 border-b-2 border-flag-gold-400' : 'text-white'
                 }`}
               >
-                {link.name}
+                <span>{link.name}</span>
+                {link.path === '/fanzone' && favoriteIds.length > 0 && (
+                  <span className="flex items-center gap-1 bg-flag-red-500 text-[10px] px-1.5 py-0.5 rounded-full text-white animate-pulse">
+                    <Heart className="w-2 h-2 fill-white" />
+                    {favoriteIds.length}
+                  </span>
+                )}
               </Link>
             ))}
           </nav>
@@ -82,13 +91,19 @@ export default function Header() {
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsMenuOpen(false)}
-                className={`block px-3 py-2 rounded-md text-base font-medium ${
+                className={`flex items-center justify-between px-3 py-2 rounded-md text-base font-medium ${
                   isActive(link.path)
                     ? 'bg-flag-500 text-flag-gold-400'
                     : 'text-white hover:bg-flag-500'
                 }`}
               >
-                {link.name}
+                <span>{link.name}</span>
+                {link.path === '/fanzone' && favoriteIds.length > 0 && (
+                  <span className="flex items-center gap-1 bg-flag-red-500 text-[10px] px-2 py-1 rounded-full text-white">
+                    <Heart className="w-2.5 h-2.5 fill-white" />
+                    {favoriteIds.length}
+                  </span>
+                )}
               </Link>
             ))}
           </div>
