@@ -28,7 +28,10 @@ export default function LiveScores() {
   const [error, setError] = useState(false);
 
   const fetchScores = async () => {
-    const apiKey = import.meta.env.VITE_CRICAPI_KEY;
+    const apiKey = import.meta.env.VITE_CRICAPI_KEY || '5f279767-666f-4a68-9be3-079e78190c67';
+    console.log('API Key:', apiKey);
+    console.log('Fetching live scores...');
+
     if (!apiKey) {
       setLoading(false);
       return;
@@ -40,13 +43,15 @@ export default function LiveScores() {
     try {
       const response = await fetch(`https://api.cricapi.com/v1/cricScore?apikey=${apiKey}`);
       const data = await response.json();
+      console.log('API Response:', data);
 
-      if (data.status === 'success' && Array.isArray(data.data)) {
-        const bdMatches = data.data
-          .filter((m: Match) => 
-            m.teams.some(team => team.toLowerCase().includes('bangladesh'))
-          )
-          .sort((a: Match, b: Match) => {
+      if (data.status === 'success') {
+        const bangladeshMatches = (data.data || []).filter((match: any) => {
+          const teamsStr = JSON.stringify(match.teams || []).toLowerCase();
+          const nameStr = (match.name || '').toLowerCase();
+          return teamsStr.includes('bangladesh') || nameStr.includes('bangladesh');
+        })
+          .sort((a: any, b: any) => {
             // Live matches first (started but not ended)
             const aLive = a.matchStarted && !a.matchEnded;
             const bLive = b.matchStarted && !b.matchEnded;
@@ -57,9 +62,12 @@ export default function LiveScores() {
           })
           .slice(0, 4);
         
-        setMatches(bdMatches);
+        setMatches(bangladeshMatches);
       } else {
-        setError(true);
+        setMatches([]);
+        if (data.status !== 'success') {
+          setError(true);
+        }
       }
     } catch (err) {
       console.error('Failed to fetch scores:', err);
