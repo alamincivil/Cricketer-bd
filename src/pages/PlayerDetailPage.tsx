@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Trophy, Calendar, MapPin, Award, Star, ExternalLink, Languages, Medal } from 'lucide-react';
+import { ArrowLeft, Trophy, Calendar, MapPin, Award, Star, ExternalLink, Languages, Medal, GitCompare } from 'lucide-react';
 import { getPlayerById } from '../services/players';
 import PlayerAvatar from '../components/PlayerAvatar';
 import PlayerStatsTable from '../components/PlayerStatsTable';
@@ -36,6 +36,10 @@ export default function PlayerDetailPage() {
   const bio = lang === 'en' ? player.bioEn : (player.bioBn || player.bioEn);
   const achievements = lang === 'en' ? player.achievementsEn : (player.achievementsBn || player.achievementsEn);
 
+  const totalRuns = Object.values(player.statsSummary).reduce((acc, curr) => acc + (curr?.runs || 0), 0);
+  const totalWickets = Object.values(player.statsSummary).reduce((acc, curr) => acc + (curr?.wickets || 0), 0);
+  const totalMatches = Object.values(player.statsSummary).reduce((acc, curr) => acc + (curr?.matches || 0), 0);
+
   return (
     <Analytics event="player_view" params={{ player_id: player.id, player_name: player.fullName }}>
       <div className="bg-gray-50 min-h-screen pb-20">
@@ -46,14 +50,23 @@ export default function PlayerDetailPage() {
           player={player}
         />
         {/* Header/Banner */}
-        <div className="bg-flag-500 h-48 md:h-64 relative">
-          <div className="max-w-7xl mx-auto px-4 h-full flex items-end">
+        <div className="bg-flag-500 h-56 md:h-72 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-flag-600 via-flag-500 to-flag-500/80" />
+          <div className="absolute -right-16 -top-16 w-72 h-72 rounded-full bg-white/5" />
+          <div className="absolute -left-8 -bottom-8 w-48 h-48 rounded-full bg-white/5" />
+          
+          <div className="max-w-7xl mx-auto px-4 h-full flex items-end relative">
             <Link to="/players" className="absolute top-8 left-4 md:left-8 text-white flex items-center hover:text-flag-gold-400 transition-colors">
               <ArrowLeft className="w-5 h-5 mr-2" /> Back to Players
             </Link>
             <div className="absolute top-8 right-4 md:right-8 flex items-center space-x-4">
               <FavoriteButton player={player} />
               <LanguageToggle />
+            </div>
+            
+            <div className="absolute bottom-8 left-4 md:left-8 text-white">
+              <p className="text-xs font-bold uppercase tracking-widest text-white/60 mb-1">{player.role}</p>
+              <h1 className="text-3xl md:text-4xl font-black uppercase tracking-tight">{player.knownAs}</h1>
             </div>
           </div>
         </div>
@@ -64,12 +77,19 @@ export default function PlayerDetailPage() {
             <div className="lg:col-span-1">
               <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
                 <div className="p-8 flex flex-col items-center text-center">
-                  <PlayerAvatar name={player.fullName} imageUrl={player.imageUrl} size="xl" />
+                  <div className="ring-4 ring-flag-500/20 ring-offset-4 rounded-full">
+                    <PlayerAvatar name={player.fullName} imageUrl={player.imageUrl} size="xl" />
+                  </div>
                   
                   <h1 className="mt-6 text-3xl font-bold text-gray-900 mb-2">{player.knownAs}</h1>
-                  <p className="text-flag-500 font-bold uppercase tracking-widest text-sm mb-6">{player.role}</p>
+                  <p className="text-flag-500 font-bold uppercase tracking-widest text-sm">{player.role}</p>
                   
-                  <div className="w-full space-y-4 text-left">
+                  <div className="flex items-center gap-1.5 mt-2 bg-flag-50 px-3 py-1 rounded-full">
+                    <MapPin className="w-3 h-3 text-flag-500" />
+                    <span className="text-xs font-bold text-flag-500">{player.district}</span>
+                  </div>
+                  
+                  <div className="w-full space-y-4 text-left mt-6">
                     <div className="flex items-center text-gray-600">
                       <Calendar className="w-5 h-5 mr-3 text-gray-400" />
                       <div className="flex flex-col">
@@ -94,6 +114,23 @@ export default function PlayerDetailPage() {
                           {format}
                         </span>
                       ))}
+                    </div>
+                  </div>
+
+                  <div className="w-full mt-6 bg-gray-50 rounded-2xl p-4">
+                    <div className="grid grid-cols-3 gap-2 text-center">
+                      <div>
+                        <p className="text-lg font-black text-gray-900">{totalRuns.toLocaleString()}</p>
+                        <p className="text-[10px] font-bold text-gray-400 uppercase">Runs</p>
+                      </div>
+                      <div>
+                        <p className="text-lg font-black text-gray-900">{totalWickets}</p>
+                        <p className="text-[10px] font-bold text-gray-400 uppercase">Wickets</p>
+                      </div>
+                      <div>
+                        <p className="text-lg font-black text-gray-900">{totalMatches}</p>
+                        <p className="text-[10px] font-bold text-gray-400 uppercase">Matches</p>
+                      </div>
                     </div>
                   </div>
 
@@ -174,6 +211,22 @@ export default function PlayerDetailPage() {
                 </div>
               )}
 
+              {/* Compare CTA */}
+              <div className="bg-gradient-to-r from-flag-500 to-flag-600 p-6 rounded-2xl text-white flex items-center justify-between">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-widest text-white/60 mb-1">Head-to-Head</p>
+                  <h3 className="text-xl font-black uppercase tracking-tight">Compare {player.knownAs}</h3>
+                  <p className="text-white/70 text-sm mt-1">See how {player.knownAs} stacks up against other Tigers</p>
+                </div>
+                <Link
+                  to="/compare"
+                  className="flex-shrink-0 bg-white text-flag-500 px-5 py-3 rounded-xl font-bold text-sm hover:bg-flag-50 transition-colors flex items-center gap-2"
+                >
+                  <GitCompare className="w-4 h-4" />
+                  Compare
+                </Link>
+              </div>
+
               {/* Career Stats */}
               <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
@@ -190,10 +243,10 @@ export default function PlayerDetailPage() {
                   <Link 
                     key={tag} 
                     to={`/era/${tag.toLowerCase()}`}
-                    className="bg-white px-4 py-2 rounded-xl shadow-sm border border-gray-100 flex items-center space-x-2 hover:border-flag-gold-400 transition-colors"
+                    className="bg-white px-5 py-2.5 rounded-2xl shadow-sm border border-gray-100 flex items-center space-x-2 hover:border-flag-500 hover:bg-flag-50 transition-all group"
                   >
                     <Award className="w-4 h-4 text-flag-gold-400" />
-                    <span className="text-sm font-bold text-gray-700">{tag} Era</span>
+                    <span className="text-sm font-bold text-gray-700 group-hover:text-flag-500 uppercase tracking-wide">{tag} Era</span>
                   </Link>
                 ))}
               </div>
