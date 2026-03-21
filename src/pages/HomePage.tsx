@@ -64,7 +64,7 @@ export default function HomePage() {
       <LiveScores />
 
       {/* Era Highlight */}
-      <section className="w-full max-w-7xl mx-auto py-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <EraHighlight />
       </section>
 
@@ -122,11 +122,11 @@ export default function HomePage() {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {districtStats.map((stat, index) => (
-            <DistrictCard 
-              key={stat.district} 
-              district={stat.district} 
-              count={stat.count} 
-              index={index} 
+            <DistrictCard
+              key={stat.district}
+              district={stat.district}
+              count={stat.count}
+              index={index}
             />
           ))}
         </div>

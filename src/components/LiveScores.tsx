@@ -23,99 +23,55 @@ interface Match {
 }
 
 export default function LiveScores() {
-  const [matches, setMatches] = useState<Match[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
+  const [matches, setMatches] = useState<any[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const fetchScores = async () => {
+  useEffect(() => {
+    let cancelled = false;
+    const timeout = setTimeout(() => {
+      if (!cancelled) {
+        setIsLoading(false);
+        setMatches([]);
+      }
+    }, 5000);
+
     const apiKey = import.meta.env.VITE_CRICAPI_KEY || '5f279767-666f-4a68-9be3-079e78190c67';
-    console.log('API Key:', apiKey);
-    console.log('Fetching live scores...');
-
     if (!apiKey) {
-      setLoading(false);
+      clearTimeout(timeout);
+      setIsLoading(false);
       return;
     }
 
-    setLoading(true);
-    setError(false);
-
-    try {
-      const response = await fetch(`https://api.cricapi.com/v1/cricScore?apikey=${apiKey}`);
-      const data = await response.json();
-      console.log('API Response:', data);
-
-      if (data.status === 'success') {
-        const bangladeshMatches = (data.data || []).filter((match: any) => {
-          const teamsStr = JSON.stringify(match.teams || []).toLowerCase();
-          const nameStr = (match.name || '').toLowerCase();
-          return teamsStr.includes('bangladesh') || nameStr.includes('bangladesh');
-        })
-          .sort((a: any, b: any) => {
-            // Live matches first (started but not ended)
-            const aLive = a.matchStarted && !a.matchEnded;
-            const bLive = b.matchStarted && !b.matchEnded;
-            if (aLive && !bLive) return -1;
-            if (!aLive && bLive) return 1;
-            // Then by date descending
-            return new Date(b.dateTimeGMT).getTime() - new Date(a.dateTimeGMT).getTime();
-          })
-          .slice(0, 4);
-        
-        setMatches(bangladeshMatches);
-      } else {
-        setMatches([]);
-        if (data.status !== 'success') {
-          setError(true);
+    fetch(`https://api.cricapi.com/v1/cricScore?apikey=${apiKey}`)
+      .then(res => res.json())
+      .then(data => {
+        if (!cancelled) {
+          clearTimeout(timeout);
+          const all = data?.data || [];
+          const bd = all.filter((m: any) => {
+            const t = JSON.stringify(m.teams || []).toLowerCase();
+            const n = (m.name || '').toLowerCase();
+            return t.includes('bangladesh') || n.includes('bangladesh');
+          });
+          setMatches(bd.slice(0, 4));
+          setIsLoading(false);
         }
-      }
-    } catch (err) {
-      console.error('Failed to fetch scores:', err);
-      setError(true);
-    } finally {
-      setLoading(false);
-    }
-  };
+      })
+      .catch(() => {
+        if (!cancelled) {
+          clearTimeout(timeout);
+          setIsLoading(false);
+          setMatches([]);
+        }
+      });
 
-  useEffect(() => {
-    fetchScores();
+    return () => {
+      cancelled = true;
+      clearTimeout(timeout);
+    };
   }, []);
 
-  if (loading) {
-    return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {[1, 2].map((i) => (
-          <div key={i} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 h-40 animate-pulse">
-            <div className="flex justify-between mb-4">
-              <div className="h-4 w-16 bg-gray-200 rounded-full" />
-              <div className="h-4 w-12 bg-gray-200 rounded-full" />
-            </div>
-            <div className="h-6 w-3/4 bg-gray-200 rounded mb-4" />
-            <div className="space-y-2">
-              <div className="h-4 w-full bg-gray-200 rounded" />
-              <div className="h-4 w-2/3 bg-gray-200 rounded" />
-            </div>
-          </div>
-        ))}
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="flex items-center gap-3 text-gray-500 text-sm py-4">
-        <span>Live scores unavailable</span>
-        <button 
-          onClick={fetchScores}
-          className="p-1.5 hover:bg-gray-100 rounded-full transition-colors"
-          title="Refresh"
-        >
-          <RefreshCw className="w-4 h-4" />
-        </button>
-      </div>
-    );
-  }
-
+  if (isLoading) return null;
   if (matches.length === 0) return null;
 
   return (
@@ -170,7 +126,7 @@ export default function LiveScores() {
 
               {match.matchStarted ? (
                 <div className="space-y-1.5">
-                  {match.score?.map((s, idx) => (
+                  {match.score?.map((s: any, idx: number) => (
                     <p key={idx} className="text-sm text-gray-700 font-medium">
                       {s.inning}: <span className="font-bold">{s.r}/{s.w}</span> ({s.o} ov)
                     </p>
