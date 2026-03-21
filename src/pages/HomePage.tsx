@@ -14,7 +14,7 @@ export default function HomePage() {
   const districtStats = getDistrictStats().slice(0, 6);
 
   return (
-    <div className="space-y-16 pb-16">
+    <div className="pb-16">
       {/* Hero Section */}
       <section className="relative h-[700px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -64,7 +64,7 @@ export default function HomePage() {
       <LiveScores />
 
       {/* Era Highlight */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <section className="w-full max-w-7xl mx-auto py-16">
         <EraHighlight />
       </section>
 
