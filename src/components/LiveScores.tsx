@@ -119,8 +119,21 @@ export default function LiveScores() {
   if (matches.length === 0) return null;
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      {matches.map((match) => {
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="flex items-center justify-between mb-6">
+        <div>
+          <h2 className="text-3xl font-black text-gray-900 uppercase tracking-tight">
+            Bangladesh <span className="text-flag-500">Live</span>
+          </h2>
+          <p className="text-gray-500 font-medium text-sm">Current & recent match scores</p>
+        </div>
+        <div className="flex items-center gap-2 bg-flag-red-50 border border-flag-red-100 px-3 py-1.5 rounded-full">
+          <span className="w-2 h-2 rounded-full bg-flag-red-500 animate-pulse" />
+          <span className="text-xs font-bold text-flag-red-500 uppercase tracking-widest">Live</span>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {matches.map((match) => {
         const isLive = match.matchStarted && !match.matchEnded;
         const isUpcoming = !match.matchStarted;
         const isRecent = match.matchEnded;
@@ -174,6 +187,7 @@ export default function LiveScores() {
           </div>
         );
       })}
-    </div>
+      </div>
+    </section>
   );
 }
