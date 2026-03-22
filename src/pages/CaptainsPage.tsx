@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { Trophy, Users, Award, Star } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import captainsData from '../data/captains.json';
@@ -12,8 +13,31 @@ export default function CaptainsPage() {
   const [activeFormat, setActiveFormat] = useState('All');
 
   const filteredCaptains = useMemo(() => {
-    if (activeFormat === 'All') return captainsData;
-    return captainsData.filter((c) => c.format === activeFormat);
+    if (activeFormat !== 'All') {
+      return captainsData.filter((c) => c.format === activeFormat);
+    }
+    
+    // Deduplicate: merge same captain across formats
+    const merged: Record<string, any> = {};
+    captainsData.forEach(c => {
+      if (!merged[c.id]) {
+        merged[c.id] = { ...c, matches: 0, won: 0, lost: 0, drawn: 0 };
+      }
+      merged[c.id].matches += c.matches;
+      merged[c.id].won += c.won;
+      merged[c.id].lost += c.lost;
+      merged[c.id].drawn += (c.drawn || 0);
+    });
+    
+    // Recalculate win percentage and sort by matches
+    return Object.values(merged).map((c: any) => ({
+      ...c,
+      winPercentage: c.matches > 0 ? (c.won / c.matches) * 100 : 0,
+      tenure: captainsData
+        .filter(x => x.id === c.id)
+        .map(x => x.format)
+        .join(' • '),
+    })).sort((a: any, b: any) => b.matches - a.matches);
   }, [activeFormat]);
 
   return (
@@ -67,6 +91,37 @@ export default function CaptainsPage() {
           formats={formats} 
         />
 
+        {/* Hall of Fame Strip */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          {[
+            { name: 'Mashrafe Mortaza', stat: '50 ODI Wins', label: 'Most ODI Wins', id: 'mashrafe-mortaza', tenure: '2010-2020' },
+            { name: 'Mushfiqur Rahim', stat: '7 Test Wins', label: 'Most Test Wins', id: 'mushfiqur-rahim', tenure: '2011-2017' },
+            { name: 'Shakib Al Hasan', stat: '43 Wins', label: 'All-Format Captain', id: 'shakib-al-hasan', tenure: '2009-2023' },
+          ].map((captain, i) => (
+            <Link
+              key={i}
+              to={`/players/${captain.id}`}
+              className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 flex items-center gap-4 hover:shadow-md hover:border-flag-200 transition-all group"
+            >
+              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-flag-500 to-flag-600 flex items-center justify-center text-white font-black text-lg flex-shrink-0 overflow-hidden">
+                <img
+                  src={`https://picsum.photos/seed/${captain.id}/100/100`}
+                  alt={captain.name}
+                  className="w-full h-full object-cover"
+                  onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                />
+              </div>
+              <div className="min-w-0">
+                <p className="font-black text-gray-900 truncate group-hover:text-flag-500 transition-colors">{captain.name}</p>
+                <p className="text-xs text-gray-400 font-medium">{captain.tenure}</p>
+                <div className="flex items-center gap-1.5 mt-1">
+                  <span className="bg-flag-50 text-flag-500 text-[10px] font-black px-2 py-0.5 rounded-full uppercase tracking-widest">{captain.stat}</span>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+
         {/* Table Section */}
         <AnimatePresence mode="wait">
           <motion.div
@@ -109,35 +164,36 @@ export default function CaptainsPage() {
         
         {/* Stats Summary Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-          <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex items-center space-x-6">
-            <div className="w-16 h-16 bg-flag-50 rounded-2xl flex items-center justify-center">
+          <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex items-center space-x-6 hover:shadow-md transition-shadow">
+            <div className="w-16 h-16 bg-flag-50 rounded-2xl flex items-center justify-center flex-shrink-0">
               <Star className="w-8 h-8 text-flag-500" />
             </div>
             <div>
               <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Total Captains</p>
-              <p className="text-3xl font-black text-gray-900">{new Set(captainsData.map(c => c.id)).size}</p>
+              <p className="text-4xl font-black text-gray-900">{new Set(captainsData.map(c => c.id)).size}</p>
+              <p className="text-xs text-gray-400 mt-1">Across all formats</p>
             </div>
           </div>
-          
-          <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex items-center space-x-6">
-            <div className="w-16 h-16 bg-flag-red-50 rounded-2xl flex items-center justify-center">
-              <Award className="w-8 h-8 text-flag-red-500" />
+
+          <div className="bg-flag-500 p-8 rounded-3xl shadow-sm flex items-center space-x-6 hover:shadow-md transition-shadow">
+            <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center flex-shrink-0">
+              <Award className="w-8 h-8 text-white" />
             </div>
             <div>
-              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Most ODI Wins</p>
-              <p className="text-3xl font-black text-gray-900">50</p>
-              <p className="text-[10px] font-bold text-gray-400 uppercase">Mashrafe Mortaza</p>
+              <p className="text-xs font-bold text-white/60 uppercase tracking-widest mb-1">Most ODI Wins</p>
+              <p className="text-4xl font-black text-white">50</p>
+              <p className="text-xs text-white/60 mt-1 font-bold uppercase tracking-widest">Mashrafe Mortaza</p>
             </div>
           </div>
-          
-          <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex items-center space-x-6">
-            <div className="w-16 h-16 bg-flag-gold-50 rounded-2xl flex items-center justify-center">
+
+          <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex items-center space-x-6 hover:shadow-md transition-shadow">
+            <div className="w-16 h-16 bg-flag-gold-50 rounded-2xl flex items-center justify-center flex-shrink-0">
               <Trophy className="w-8 h-8 text-flag-gold-400" />
             </div>
             <div>
               <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Most Test Wins</p>
-              <p className="text-3xl font-black text-gray-900">7</p>
-              <p className="text-[10px] font-bold text-gray-400 uppercase">Mushfiqur Rahim</p>
+              <p className="text-4xl font-black text-gray-900">7</p>
+              <p className="text-xs text-gray-400 mt-1 font-bold uppercase tracking-widest">Mushfiqur Rahim</p>
             </div>
           </div>
         </div>

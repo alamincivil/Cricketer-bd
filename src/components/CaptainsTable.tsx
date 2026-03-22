@@ -111,8 +111,20 @@ export default function CaptainsTable({ captains }: CaptainsTableProps) {
               >
                 <td className="px-6 py-4 text-sm font-black text-gray-300">#{index + 1}</td>
                 <td className="px-6 py-4">
-                  <Link to={`/players/${captain.id}`} className="font-bold text-gray-900 hover:text-flag-500 transition-colors">
-                    {captain.name}
+                  <Link to={`/players/${captain.id}`} className="flex items-center gap-3 group">
+                    <div className="w-9 h-9 rounded-full overflow-hidden bg-flag-50 flex-shrink-0 border-2 border-gray-100">
+                      <img
+                        src={`https://picsum.photos/seed/${captain.id}/100/100`}
+                        alt={captain.name}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          (e.target as HTMLImageElement).style.display = 'none';
+                        }}
+                      />
+                    </div>
+                    <span className="font-bold text-gray-900 hover:text-flag-500 transition-colors group-hover:text-flag-500">
+                      {captain.name}
+                    </span>
                   </Link>
                 </td>
                 <td className="px-6 py-4 text-sm text-gray-500 font-medium">{captain.tenure}</td>
@@ -121,8 +133,18 @@ export default function CaptainsTable({ captains }: CaptainsTableProps) {
                   {captain.won}
                 </td>
                 <td className="px-6 py-4 text-center font-mono font-bold text-gray-400">{captain.lost}</td>
-                <td className="px-6 py-4 text-center">
-                  <span className="font-mono font-black text-flag-500">{captain.winPercentage.toFixed(1)}%</span>
+                <td className="px-6 py-4">
+                  <div className="flex items-center gap-2">
+                    <div className="flex-1 bg-gray-100 rounded-full h-1.5 w-16">
+                      <div
+                        className="bg-flag-500 h-1.5 rounded-full"
+                        style={{ width: `${Math.min(captain.winPercentage, 100)}%` }}
+                      />
+                    </div>
+                    <span className="font-mono font-black text-flag-500 text-sm whitespace-nowrap">
+                      {captain.winPercentage.toFixed(1)}%
+                    </span>
+                  </div>
                 </td>
                 <td className="px-6 py-4 text-right">
                   <Link to={`/players/${captain.id}`} className="inline-flex items-center text-flag-500 hover:text-flag-600 transition-colors">

@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { Award, TrendingUp, Filter, Star, Trophy } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { getLeaders } from '../services/players';
@@ -25,27 +26,31 @@ export default function LeadersPage() {
       />
 
       {/* Hero Section */}
-      <div className="bg-white border-b border-gray-100 py-16 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+      <div className="bg-flag-500 py-12 md:py-16 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-flag-600 via-flag-500 to-flag-500/80" />
+        <div className="absolute -right-16 -top-16 w-72 h-72 rounded-full bg-white/5" />
+        <div className="absolute -left-8 -bottom-8 w-48 h-48 rounded-full bg-white/5" />
+        <div className="max-w-7xl mx-auto px-4 relative z-10 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="w-20 h-20 bg-flag-50 rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-inner"
+            className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-white/80 mb-4"
           >
-            <TrendingUp className="w-10 h-10 text-flag-500" />
+            <TrendingUp className="w-3 h-3" />
+            Statistical Records
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-6xl font-black text-gray-900 mb-6 tracking-tight"
+            className="text-4xl md:text-6xl font-black uppercase tracking-tight text-white leading-none mb-4"
           >
-            ALL-TIME <span className="text-flag-500">LEADERS</span>
+            All-Time <span className="text-flag-gold-400">Leaders</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-lg text-gray-500 max-w-2xl mx-auto font-medium"
+            className="text-white/70 font-medium max-w-xl mx-auto"
           >
             The record breakers and milestone makers. Explore the top performers in Bangladesh cricket history.
           </motion.p>
@@ -117,6 +122,51 @@ export default function LeadersPage() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
           >
+            {leaders.length >= 3 && (
+              <div className="grid grid-cols-3 gap-4 mb-6">
+                {/* #2 */}
+                <Link to={`/players/${leaders[1].player.id}`} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 text-center hover:shadow-md transition-all group mt-6">
+                  <div className="text-2xl font-black text-gray-300 mb-2">#2</div>
+                  <div className="w-14 h-14 rounded-full overflow-hidden mx-auto mb-3 border-4 border-gray-100">
+                    <img src={leaders[1].player.imageUrl} alt={leaders[1].player.knownAs} className="w-full h-full object-cover" />
+                  </div>
+                  <p className="font-black text-gray-900 text-sm group-hover:text-flag-500 transition-colors">{leaders[1].player.knownAs}</p>
+                  <p className="text-xs text-gray-400">{leaders[1].player.role}</p>
+                  <p className="text-xl font-black text-flag-500 mt-2">
+                    {statType === 'runs' ? leaders[1].runs?.toLocaleString() : leaders[1].wickets}
+                  </p>
+                  <p className="text-[10px] font-bold text-gray-400 uppercase">{statType === 'runs' ? 'Runs' : 'Wickets'}</p>
+                </Link>
+
+                {/* #1 — Center, elevated */}
+                <Link to={`/players/${leaders[0].player.id}`} className="bg-flag-500 rounded-2xl shadow-lg shadow-flag-500/30 p-5 text-center hover:shadow-xl transition-all group -mt-2">
+                  <div className="text-2xl font-black text-flag-gold-400 mb-2">👑 #1</div>
+                  <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-3 border-4 border-white/30">
+                    <img src={leaders[0].player.imageUrl} alt={leaders[0].player.knownAs} className="w-full h-full object-cover" />
+                  </div>
+                  <p className="font-black text-white text-sm">{leaders[0].player.knownAs}</p>
+                  <p className="text-xs text-white/60">{leaders[0].player.role}</p>
+                  <p className="text-2xl font-black text-flag-gold-400 mt-2">
+                    {statType === 'runs' ? leaders[0].runs?.toLocaleString() : leaders[0].wickets}
+                  </p>
+                  <p className="text-[10px] font-bold text-white/60 uppercase">{statType === 'runs' ? 'Runs' : 'Wickets'}</p>
+                </Link>
+
+                {/* #3 */}
+                <Link to={`/players/${leaders[2].player.id}`} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 text-center hover:shadow-md transition-all group mt-6">
+                  <div className="text-2xl font-black text-gray-300 mb-2">#3</div>
+                  <div className="w-14 h-14 rounded-full overflow-hidden mx-auto mb-3 border-4 border-gray-100">
+                    <img src={leaders[2].player.imageUrl} alt={leaders[2].player.knownAs} className="w-full h-full object-cover" />
+                  </div>
+                  <p className="font-black text-gray-900 text-sm group-hover:text-flag-500 transition-colors">{leaders[2].player.knownAs}</p>
+                  <p className="text-xs text-gray-400">{leaders[2].player.role}</p>
+                  <p className="text-xl font-black text-flag-500 mt-2">
+                    {statType === 'runs' ? leaders[2].runs?.toLocaleString() : leaders[2].wickets}
+                  </p>
+                  <p className="text-[10px] font-bold text-gray-400 uppercase">{statType === 'runs' ? 'Runs' : 'Wickets'}</p>
+                </Link>
+              </div>
+            )}
             <div className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
               <div className="p-8 border-b border-gray-50 flex items-center justify-between">
                 <div className="flex items-center space-x-4">
@@ -152,6 +202,7 @@ export default function LeadersPage() {
                 <LeadersTable
                   leaders={leaders}
                   statType={statType}
+                  maxValue={statType === 'runs' ? (leaders[0]?.runs || 0) : (leaders[0]?.wickets || 0)}
                 />
               </div>
             </div>
@@ -161,35 +212,35 @@ export default function LeadersPage() {
         {/* Stats Summary Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
           <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex items-center space-x-6">
-            <div className="w-16 h-16 bg-flag-50 rounded-2xl flex items-center justify-center">
+            <div className="w-16 h-16 bg-flag-50 rounded-2xl flex items-center justify-center flex-shrink-0">
               <Star className="w-8 h-8 text-flag-500" />
             </div>
             <div>
               <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Total Runs Leader</p>
               <p className="text-2xl font-black text-gray-900">Mushfiqur Rahim</p>
-              <p className="text-[10px] font-bold text-gray-400 uppercase">14,000+ Runs</p>
+              <p className="text-xs font-bold text-flag-500 mt-1">14,968 Runs</p>
             </div>
           </div>
-          
-          <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex items-center space-x-6">
-            <div className="w-16 h-16 bg-flag-red-50 rounded-2xl flex items-center justify-center">
-              <Trophy className="w-8 h-8 text-flag-red-500" />
+
+          <div className="bg-flag-500 p-8 rounded-3xl shadow-sm flex items-center space-x-6">
+            <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center flex-shrink-0">
+              <Trophy className="w-8 h-8 text-white" />
             </div>
             <div>
-              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Total Wickets Leader</p>
-              <p className="text-2xl font-black text-gray-900">Shakib Al Hasan</p>
-              <p className="text-[10px] font-bold text-gray-400 uppercase">700+ Wickets</p>
+              <p className="text-xs font-bold text-white/60 uppercase tracking-widest mb-1">Total Wickets Leader</p>
+              <p className="text-2xl font-black text-white">Shakib Al Hasan</p>
+              <p className="text-xs font-bold text-flag-gold-400 mt-1">712 Wickets</p>
             </div>
           </div>
-          
+
           <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex items-center space-x-6">
-            <div className="w-16 h-16 bg-flag-gold-50 rounded-2xl flex items-center justify-center">
+            <div className="w-16 h-16 bg-flag-gold-50 rounded-2xl flex items-center justify-center flex-shrink-0">
               <Award className="w-8 h-8 text-flag-gold-400" />
             </div>
             <div>
               <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Most ODI Runs</p>
               <p className="text-2xl font-black text-gray-900">Tamim Iqbal</p>
-              <p className="text-[10px] font-bold text-gray-400 uppercase">8,000+ Runs</p>
+              <p className="text-xs font-bold text-flag-500 mt-1">8,357 Runs</p>
             </div>
           </div>
         </div>

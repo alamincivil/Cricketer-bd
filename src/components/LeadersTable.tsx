@@ -7,9 +7,10 @@ import PlayerAvatar from './PlayerAvatar';
 interface LeadersTableProps {
   leaders: LeaderStat[];
   statType: 'runs' | 'wickets';
+  maxValue?: number;
 }
 
-export default function LeadersTable({ leaders, statType }: LeadersTableProps) {
+export default function LeadersTable({ leaders, statType, maxValue }: LeadersTableProps) {
   return (
     <div className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
       <div className="hidden md:block overflow-x-auto">
@@ -53,6 +54,12 @@ export default function LeadersTable({ leaders, statType }: LeadersTableProps) {
                   <span className={`font-mono font-black text-lg ${statType === 'runs' ? 'text-gray-900' : 'text-flag-red-500'}`}>
                     {statType === 'runs' ? leader.runs?.toLocaleString() : leader.wickets}
                   </span>
+                  <div className="mt-1 w-20 bg-gray-100 rounded-full h-1 mx-auto">
+                    <div
+                      className={`h-1 rounded-full ${statType === 'runs' ? 'bg-flag-500' : 'bg-flag-red-500'}`}
+                      style={{ width: `${maxValue ? Math.min(((statType === 'runs' ? (leader.runs || 0) : (leader.wickets || 0)) / maxValue) * 100, 100) : 0}%` }}
+                    />
+                  </div>
                 </td>
                 <td className="px-6 py-4 text-center font-mono text-gray-500">{leader.average?.toFixed(2)}</td>
                 <td className="px-6 py-4 text-right">
@@ -98,6 +105,12 @@ export default function LeadersTable({ leaders, statType }: LeadersTableProps) {
                 <p className={`font-mono font-black ${statType === 'runs' ? 'text-gray-900' : 'text-flag-red-500'}`}>
                   {statType === 'runs' ? leader.runs?.toLocaleString() : leader.wickets}
                 </p>
+                <div className="mt-1 w-full bg-gray-100 rounded-full h-1">
+                  <div
+                    className={`h-1 rounded-full ${statType === 'runs' ? 'bg-flag-500' : 'bg-flag-red-500'}`}
+                    style={{ width: `${maxValue ? Math.min(((statType === 'runs' ? (leader.runs || 0) : (leader.wickets || 0)) / maxValue) * 100, 100) : 0}%` }}
+                  />
+                </div>
               </div>
               <div className="text-center">
                 <p className="text-[10px] font-bold text-gray-400 uppercase mb-1">Avg</p>

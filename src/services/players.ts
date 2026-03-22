@@ -43,11 +43,19 @@ export const getLeaders = (
     };
   }).filter(l => (stat === 'runs' ? l.runs : l.wickets) > 0);
 
-  return leaders.sort((a, b) => {
+  const sorted = leaders.sort((a, b) => {
     const aVal = stat === 'runs' ? a.runs || 0 : a.wickets || 0;
     const bVal = stat === 'runs' ? b.runs || 0 : b.wickets || 0;
     return bVal - aVal;
-  }).slice(0, 20);
+  });
+
+  const seen = new Set<string>();
+  const deduplicated = sorted.filter(l => {
+    if (seen.has(l.player.id)) return false;
+    seen.add(l.player.id);
+    return true;
+  });
+  return deduplicated.slice(0, 20);
 };
 
 export const getPlayersByDistrict = (district: string): Player[] => {
